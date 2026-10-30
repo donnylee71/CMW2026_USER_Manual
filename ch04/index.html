@@ -1,0 +1,1280 @@
+
+<!doctype html>
+<html lang="ko" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Coupling Matrix Wizard 2026 Ver 2.0">
+      
+      
+        <meta name="author" content="Partron RF Solution Team">
+      
+      
+      
+        <link rel="prev" href="../ch03/">
+      
+      
+        <link rel="next" href="../ch05/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+    
+    
+      
+        <title>Ch 4. Synthesize 모드 - CMW2026 사용자 매뉴얼</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#chapter-4-synthesize" class="md-skip">
+          콘텐츠로 이동
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="상단/헤더">
+    <a href=".." title="CMW2026 사용자 매뉴얼" class="md-header__button md-logo" aria-label="CMW2026 사용자 매뉴얼" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CMW2026 사용자 매뉴얼
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Ch 4. Synthesize 모드
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="light-blue"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="light-blue"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="검색">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="공유" aria-label="공유" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="지우기" aria-label="지우기" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            검색 초기화
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="네비게이션" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="CMW2026 사용자 매뉴얼" class="md-nav__button md-logo" aria-label="CMW2026 사용자 매뉴얼" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    CMW2026 사용자 매뉴얼
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    홈
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ch 1. 개요
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ch 2. 설치 및 라이선스
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ch 3. 화면 구성
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ch 4. Synthesize 모드
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ch 4. Synthesize 모드
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#41-synthesize" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Synthesize 모드 진입 및 화면 구성
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.1 Synthesize 모드 진입 및 화면 구성">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#411" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1.1 모드 진입
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#412" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1.2 주요 화면 변화
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#42-spec-optimization-goals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 고객 규격(Spec) 검토 및 Optimization Goals 설정
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.2 고객 규격(Spec) 검토 및 Optimization Goals 설정">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#421-optimization-goals-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2.1 Optimization Goals 추가 방법 (3가지)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#43-tz-transmission-zero" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 TZ (Transmission Zero) 설계 및 조정
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.3 TZ (Transmission Zero) 설계 및 조정">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#431-tz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3.1 TZ 입력 방법
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#432-tz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3.2 TZ 테이블 구조
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#433-tz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3.3 TZ 조정 방법
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#44-synthesize-auto-tuning-rl-tz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 Synthesize 모드에서의 Auto Tuning (RL 및 TZ 자동 최적화)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.4 Synthesize 모드에서의 Auto Tuning (RL 및 TZ 자동 최적화)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#441" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4.1 최적화 원리
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#442" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4.2 튜닝 실행
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#443" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4.3 결과 요약 로그
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ch 5. Filter(CBW) 모드
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ch 6. 마커 설정
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ch 7. Temp Simulation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ch 8. 메뉴 및 파일 입출력
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ch 9. 용어 정리
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ch 10. Design Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../appendix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    부록 (FAQ)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#41-synthesize" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Synthesize 모드 진입 및 화면 구성
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.1 Synthesize 모드 진입 및 화면 구성">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#411" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1.1 모드 진입
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#412" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1.2 주요 화면 변화
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#42-spec-optimization-goals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 고객 규격(Spec) 검토 및 Optimization Goals 설정
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.2 고객 규격(Spec) 검토 및 Optimization Goals 설정">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#421-optimization-goals-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2.1 Optimization Goals 추가 방법 (3가지)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#43-tz-transmission-zero" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 TZ (Transmission Zero) 설계 및 조정
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.3 TZ (Transmission Zero) 설계 및 조정">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#431-tz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3.1 TZ 입력 방법
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#432-tz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3.2 TZ 테이블 구조
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#433-tz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3.3 TZ 조정 방법
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#44-synthesize-auto-tuning-rl-tz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 Synthesize 모드에서의 Auto Tuning (RL 및 TZ 자동 최적화)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.4 Synthesize 모드에서의 Auto Tuning (RL 및 TZ 자동 최적화)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#441" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4.1 최적화 원리
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#442" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4.2 튜닝 실행
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#443" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4.3 결과 요약 로그
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="chapter-4-synthesize">Chapter 4. Synthesize 모드 완전 정복<a class="headerlink" href="#chapter-4-synthesize" title="Permanent link">&para;</a></h1>
+<p>Synthesize 모드는 <strong>Chebyshev 합성 이론</strong>을 기반으로, 목표 스펙(Fc, BW, RL, TZ)에 완벽하게 일치하는 <strong>이론적 이상 파형</strong>을 생성하는 모드입니다.</p>
+<p>실무적으로 Synthesize 모드는 <strong>초기 고객의 요구 규격(Spec) 검토</strong> 및 <strong>최적의 필터 구조(공진기 단수, TZ 배치)를 결정</strong>하는 가장 중요한 단계입니다. 이 장에서는 실무 관점의 설계 워크플로우를 상세히 다룹니다.</p>
+<h2 id="41-synthesize">4.1 Synthesize 모드 진입 및 화면 구성<a class="headerlink" href="#41-synthesize" title="Permanent link">&para;</a></h2>
+<h3 id="411">4.1.1 모드 진입<a class="headerlink" href="#411" title="Permanent link">&para;</a></h3>
+<p>화면 우측 상단의 <strong>Synthesizer</strong> 버튼을 클릭합니다. 버튼 색상이 초록색으로 변하며 Synthesize 모드가 활성화됩니다.</p>
+<h3 id="412">4.1.2 주요 화면 변화<a class="headerlink" href="#412" title="Permanent link">&para;</a></h3>
+<ul>
+<li>그래프에 <code>Synth S11</code>, <code>Synth S21</code>, <code>Synth S22</code> 파형이 표시됩니다.</li>
+<li>오른쪽 하단의 <strong>Synthesize TZ (Transmission Zero)</strong> 테이블이 활성화됩니다.</li>
+<li>왼쪽 Coupling Matrix 패널이 회색으로 비활성화됩니다. (Synthesize 모드는 매트릭스의 직접적인 영향을 받지 않습니다.)</li>
+<li>Auto Tuning 그룹박스가 활성화되며, RL과 TZ를 자동으로 최적화하는 모드로 동작합니다.</li>
+</ul>
+<p><a href="../images/ch04/fig-4-01.png" target="_blank">
+  <img src="../images/ch04/fig-4-01.png" alt="Synthesize 모드 화면 변화" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+</a></p>
+<p><em>그림 4-1: Synthesize 모드 진입 후 주요 화면 변화</em></p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>Synthesize 모드는 Coupling Matrix의 Fi, CBW, Qe 값을 <strong>읽지도, 쓰지도 않습니다</strong>. 순수하게 Chebyshev 해석적 합성(N, Fc, BW, RL, Qu, TZ)만으로 파형을 계산합니다.</p>
+</div>
+<h2 id="42-spec-optimization-goals">4.2 고객 규격(Spec) 검토 및 Optimization Goals 설정<a class="headerlink" href="#42-spec-optimization-goals" title="Permanent link">&para;</a></h2>
+<p>Synthesize 모드에 진입했다면, 가장 먼저 해야 할 일은 <strong>고객이 요구한 마스크(Mask) 스펙을 Optimization Goals로 정의</strong>하는 것입니다.</p>
+<h3 id="421-optimization-goals-3">4.2.1 Optimization Goals 추가 방법 (3가지)<a class="headerlink" href="#421-optimization-goals-3" title="Permanent link">&para;</a></h3>
+<p>프로그램은 목표 스펙을 입력하는 3가지 방법을 제공합니다.</p>
+<p><strong>방법 1: 그래프 우클릭을 통한 추가</strong></p>
+<ol>
+<li>그래프 빈 공간에서 마우스 우클릭을 합니다.</li>
+<li><strong>Add Optimization Goals</strong> 메뉴를 클릭합니다.</li>
+<li>작은 입력 창이 뜨면 Type(S11/S21/S22), Band(Pass/Stop), 주파수 범위, Target(dB)을 입력합니다.</li>
+</ol>
+<p><a href="../images/ch04/fig-4-02.png" target="_blank">
+  <img src="../images/ch04/fig-4-02.png" alt="Goals 추가 - 그래프 우클릭 메뉴" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+</a></p>
+<p><em>그림 4-2: 그래프 우클릭을 통한 메뉴 선택</em></p>
+<p><a href="../images/ch04/fig-4-03.png" target="_blank">
+  <img src="../images/ch04/fig-4-03.png" alt="Goals 추가 - 입력 창" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+</a></p>
+<p><em>그림 4-3: Goals 입력 팝업 창</em></p>
+<div class="admonition tip">
+<p class="admonition-title">TIP</p>
+<p>Goals 입력 창은 <strong>모달리스(Modaless)</strong> 로 동작합니다. 입력 창을 열어둔 채로 그래프나 다른 패널을 조작할 수 있으며, Enter 키로 Goals를 추가한 뒤에도 창이 닫히지 않아 <strong>연속 입력</strong>이 가능합니다.</p>
+</div>
+<p><strong>방법 2: Optimization Goals 그리드에 직접 추가</strong></p>
+<ol>
+<li>왼쪽 패널의 <strong>Optimization Goals</strong> 테이블로 이동합니다.</li>
+<li>빈 행을 클릭하여 Type, Band, F_Start, F_Stop, Target, Weight를 직접 입력합니다.</li>
+<li>테이블 우클릭 → <strong>행 추가 (Insert Row)</strong> 를 눌러 행을 늘릴 수도 있습니다.</li>
+</ol>
+<p><a href="../images/ch04/fig-4-04.png" target="_blank">
+  <img src="../images/ch04/fig-4-04.png" alt="Goals 추가 - 그리드 직접 입력" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+</a></p>
+<p><em>그림 4-4: Optimization Goals 그리드 직접 입력</em></p>
+<p><a href="../images/ch04/fig-4-05.png" target="_blank">
+  <img src="../images/ch04/fig-4-05.png" alt="Goals 추가 - 행 추가 메뉴" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+</a></p>
+<p><em>그림 4-5: 우클릭을 통한 행 추가 메뉴</em></p>
+<p><strong>방법 3: Import Mask (CSV 파일 불러오기)</strong></p>
+<ol>
+<li>상단 메뉴에서 <strong>Import → Import Mask</strong>를 클릭합니다.</li>
+<li>고객으로부터 받은 스펙 CSV 파일을 선택하면 목표 마스크가 한 번에 로드됩니다.</li>
+<li>또는 Goals 테이블 우클릭 → <strong>Import Mask (CSV)</strong> 를 클릭해도 됩니다.</li>
+</ol>
+<p><a href="../images/ch04/fig-4-06.png" target="_blank">
+  <img src="../images/ch04/fig-4-06.png" alt="Goals 추가 - Import 메뉴" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+</a></p>
+<p><em>그림 4-6: 상단 메뉴의 Import 경로</em></p>
+<p><a href="../images/ch04/fig-4-07.png" target="_blank">
+  <img src="../images/ch04/fig-4-07.png" alt="Goals 추가 - Import Mask 팝업" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+</a></p>
+<p><em>그림 4-7: Import Mask 파일 열기 창</em></p>
+<div class="admonition tip">
+<p class="admonition-title">TIP</p>
+<p>Goals가 추가되면 그래프에 해칭(빗금) 영역으로 마스크가 표시됩니다. 이 마스크를 벗어나지 않도록 설계하는 것이 목표입니다.</p>
+</div>
+<h2 id="43-tz-transmission-zero">4.3 TZ (Transmission Zero) 설계 및 조정<a class="headerlink" href="#43-tz-transmission-zero" title="Permanent link">&para;</a></h2>
+<p><strong>"Filter의 최적 설계를 위해서는 반드시 TZ(전송 영점)를 추가해야 합니다."</strong>
+TZ는 특정 주파수의 신호를 차단하여 가파른 스커트 특성을 만들고, 결과적으로 더 적은 단수(N)로도 고객의 감쇠(Attenuation) 규격을 만족시킬 수 있게 해줍니다.</p>
+<h3 id="431-tz">4.3.1 TZ 입력 방법<a class="headerlink" href="#431-tz" title="Permanent link">&para;</a></h3>
+<p><strong>방법 1: 마우스 우클릭을 통한 입력</strong></p>
+<ol>
+<li>그래프 빈 공간에서 마우스 우클릭을 하여 <strong>Add TZ</strong> 메뉴를 클릭합니다.</li>
+</ol>
+<p><a href="../images/ch04/fig-4-08.png" target="_blank">
+  <img src="../images/ch04/fig-4-08.png" alt="TZ 입력 - 그래프 우클릭" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+</a></p>
+<p><em>그림 4-8: 그래프 우클릭(Add TZ) 메뉴 선택</em></p>
+<ol>
+<li>주파수 입력 팝업창이 뜨면, 차단하고자 하는 주파수를 입력하고 <code>Enter</code>를 누릅니다.</li>
+</ol>
+<p><a href="../images/ch04/fig-4-09.png" target="_blank">
+  <img src="../images/ch04/fig-4-09.png" alt="TZ 입력 - 주파수 팝업" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+</a></p>
+<p><em>그림 4-9: 주파수 입력 팝업창</em></p>
+<ol>
+<li>팝업창이 닫히면 자동으로 S21 파형에 해당 주파수만큼 깊게 파이는 노치(Notch)가 생성되고, Synthesize TZ 테이블에 자동으로 등록됩니다.</li>
+</ol>
+<p><a href="../images/ch04/fig-4-10.png" target="_blank">
+  <img src="../images/ch04/fig-4-10.png" alt="TZ 추가 결과" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+</a></p>
+<p><em>그림 4-10: 그래프에 TZ가 추가된 결과 화면</em></p>
+<div class="admonition tip">
+<p class="admonition-title">TIP</p>
+<p>Add TZ 입력 팝업은 <strong>모달리스</strong>로 동작합니다. 팝업을 열어둔 상태에서도 그래프 마우스 좌표 표시 등 다른 UI 조작이 가능합니다. 여러 개의 TZ를 연속 추가하려면 <code>Enter</code> → 팝업 재호출을 반복하세요.</p>
+</div>
+<p><strong>방법 2: Synthesize TZ 테이블에서 직접 입력</strong></p>
+<ol>
+<li>우측 하단의 <strong>Synthesize TZ</strong> 테이블로 이동합니다.</li>
+<li>0행 <code>Freq (MHz)</code>의 원하는 열(예: TZ1)을 클릭합니다.</li>
+<li>주파수를 입력하고 <code>Enter</code>를 누릅니다.</li>
+<li>1행 <code>Value (dB)</code>에는 해당 주파수에서의 감쇠값이 자동으로 표시됩니다.</li>
+</ol>
+<p><a href="../images/ch04/fig-4-11.png" target="_blank">
+  <img src="../images/ch04/fig-4-11.png" alt="TZ 입력 - 테이블 직접 입력" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+</a></p>
+<p><em>그림 4-11: Synthesize TZ 테이블에서 직접 입력</em></p>
+<h3 id="432-tz">4.3.2 TZ 테이블 구조<a class="headerlink" href="#432-tz" title="Permanent link">&para;</a></h3>
+<p>Synthesize TZ 테이블은 <strong>2행 구조</strong>로 되어 있습니다.</p>
+<table>
+<thead>
+<tr>
+<th>행</th>
+<th>헤더</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0행</td>
+<td><code>Freq (MHz)</code></td>
+<td>TZ 주파수 (편집 가능, 0.5MHz 단위)</td>
+</tr>
+<tr>
+<td>1행</td>
+<td><code>Value (dB)</code></td>
+<td>해당 주파수에서의 S21 값 (읽기 전용, 자동 계산)</td>
+</tr>
+<tr>
+<td>-</td>
+<td><code>Step</code></td>
+<td>0행의 마우스 휠 조정 단위 (기본 0.5MHz)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p><strong>Step 컬럼</strong>은 TZ 주파수를 마우스 휠로 조정할 때의 증감 단위입니다. 0.5 (기본), 1.0, 0.1 등 원하는 단위로 변경할 수 있으며, 이 값은 0행에만 적용됩니다.</p>
+</div>
+<h3 id="433-tz">4.3.3 TZ 조정 방법<a class="headerlink" href="#433-tz" title="Permanent link">&para;</a></h3>
+<p>추가된 TZ를 미세 조정하여 최적의 위치를 찾는 방법입니다.</p>
+<p><strong>방법 1: 테이블 수치 변경</strong>
+- TZ 테이블의 <code>Freq</code> 셀을 클릭하여 숫자를 직접 고치거나, 마우스 휠(Wheel)을 굴려 Step 컬럼에 설정된 단위로 조정합니다.</p>
+<p><a href="../images/ch04/fig-4-12.png" target="_blank">
+  <img src="../images/ch04/fig-4-12.png" alt="TZ 조정 - 테이블 수치 변경" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+</a></p>
+<p><em>그림 4-12: 테이블에서 수치 변경 및 마우스 휠 조정</em></p>
+<p><strong>방법 2: 그래프에서 드래그 (Drag &amp; Drop)</strong></p>
+<ol>
+<li>그래프 상단 <code>S21</code> 체크박스가 켜져 있는지 확인합니다.</li>
+<li>그래프의 TZ 세로 가이드선 위에 마우스를 올립니다. (커서가 ↔ 로 바뀝니다.)</li>
+<li>클릭한 채로 좌우로 드래그합니다.</li>
+<li>드래그하는 동안 S21 파형이 실시간으로 재계산되어 따라 움직입니다.</li>
+</ol>
+<p><a href="../images/ch04/fig-4-13.png" target="_blank">
+  <img src="../images/ch04/fig-4-13.png" alt="TZ 조정 - 그래프 드래그" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+</a></p>
+<p><em>그림 4-13: 그래프 상에서 마우스 드래그로 TZ 이동</em></p>
+<div class="admonition warning">
+<p class="admonition-title">WARNING</p>
+<p>TZ 드래그는 <strong>세로 가이드선 위(허용 오차 4px)</strong> 에서만 시작됩니다. 이는 TZ 근처에서 마커를 추가하려 할 때 드래그가 우선 시작되어 마커 추가가 차단되던 문제를 해결하기 위한 것입니다. 세로선에서 조금 벗어난 위치를 클릭하면 마커가 추가됩니다.</p>
+</div>
+<p><strong>방법 3: TZ 삭제 및 초기화</strong></p>
+<ul>
+<li>TZ 테이블에서 셀을 비우고 <code>Enter</code>를 치면 해당 TZ가 삭제됩니다.</li>
+<li>TZ 테이블 우클릭 → <strong>선택한 TZ 삭제</strong> 또는 <strong>모든 TZ 삭제 (Clear All)</strong> 를 눌러 초기화할 수 있습니다.</li>
+<li>그래프 우클릭 → <strong>Delete TZ</strong> 메뉴로도 삭제 가능합니다. (마커 위에 있으면 해당 TZ, 아니면 커서에서 가장 가까운 TZ 삭제)</li>
+</ul>
+<p><a href="../images/ch04/fig-4-14.png" target="_blank">
+  <img src="../images/ch04/fig-4-14.png" alt="TZ 조정 - 삭제 및 초기화" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+</a></p>
+<p><em>그림 4-14: 우클릭 메뉴를 통한 TZ 삭제 및 초기화</em></p>
+<h2 id="44-synthesize-auto-tuning-rl-tz">4.4 Synthesize 모드에서의 Auto Tuning (RL 및 TZ 자동 최적화)<a class="headerlink" href="#44-synthesize-auto-tuning-rl-tz" title="Permanent link">&para;</a></h2>
+<p>Synthesize 모드에서의 Auto Tuning은 5장(Filter 모드)의 매트릭스 튜닝과 완전히 다르게 동작합니다.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>Synthesize 모드의 Auto Tuning은 RL과 TZ를 최적화하는 반면, Filter 모드의 Auto Tuning은 매트릭스(Fi, CBW, Qe)를 최적화합니다.
+Filter 모드의 Auto Tuning 상세는 <a href="../ch05/#55-auto-tuning-filter-모드의-매트릭스-최적화">Chapter 5.5</a>를 참조하세요.</p>
+</div>
+<h3 id="441">4.4.1 최적화 원리<a class="headerlink" href="#441" title="Permanent link">&para;</a></h3>
+<p>Synthesize 모드의 Auto Tuning은 <strong>Coordinate Descent(교대 최적화)</strong> 방식으로 동작합니다.</p>
+<ul>
+<li><strong>최적화 대상</strong>: 오직 <strong>RL(반사 손실)</strong> 과 <strong>TZ 주파수</strong>입니다.</li>
+<li><strong>고정 대상</strong>: N, Fc, BW, Qu는 고정됩니다. (특히 <strong>Qu는 재료의 물성치</strong>이므로 절대 변하지 않습니다.)</li>
+<li><strong>동작 방식</strong>:<ol>
+<li><strong>RL 최적화</strong> (TZ 고정): Golden Section Search로 RL을 미세 조정</li>
+<li><strong>TZ 각각 최적화</strong> (RL 고정): Golden Section Search로 각 TZ를 이동 (교차 방지 적용)</li>
+<li>1~2를 반복 (최대 5회 또는 개선율 &lt; 0.01%)</li>
+</ol>
+</li>
+<li><strong>TZ 이동 범위</strong>: 이전 TZ와 다음 TZ 사이 (최소 1MHz 간격 유지)에서 자유롭게 이동</li>
+<li><strong>결과 검증</strong>: 최적화 후 S11/S22 페널티가 초기보다 10% 이상 악화되면 <strong>자동으로 원본 복원</strong></li>
+</ul>
+<h3 id="442">4.4.2 튜닝 실행<a class="headerlink" href="#442" title="Permanent link">&para;</a></h3>
+<ol>
+<li>목표 마스크(Goals)와 TZ를 설정합니다.</li>
+<li>Auto Tuning 그룹박스에서 <strong>Start</strong> 버튼을 클릭합니다.</li>
+<li>진행바(ProgressBar)가 채워지며, 최적화가 끝나면 TZ들이 최적의 위치로 이동해 있을 것입니다.</li>
+</ol>
+<p><a href="../images/ch04/fig-4-15.png" target="_blank">
+  <img src="../images/ch04/fig-4-15.png" alt="Auto Tuning 실행" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+</a></p>
+<p><em>그림 4-15: Auto Tuning을 통한 TZ 및 RL 최적화</em></p>
+<div class="admonition warning">
+<p class="admonition-title">WARNING</p>
+<p>Auto Tuning을 실행하면 현재 TZ 테이블의 값들이 Goals에 맞춰 스스로 이동합니다. 특정 TZ의 위치를 절대 고정하고 싶다면 튜닝 전에 해당 TZ를 Lock 하거나, 튜닝 후 값을 다시 조정해야 합니다.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>Synthesize 모드의 Auto Tuning은 <strong>Auto Restart 기능을 사용하지 않습니다</strong>. Filter 모드의 Auto Restart(2초 간격 Resume)는 Synthesize 모드에서는 자동으로 비활성화됩니다. Synthesize 모드는 1회 실행으로 수렴하며, 결과가 만족스럽지 않으면 Start를 다시 클릭하세요.</p>
+</div>
+<h3 id="443">4.4.3 결과 요약 로그<a class="headerlink" href="#443" title="Permanent link">&para;</a></h3>
+<p>최적화 완료 시 로그에 다음과 같은 요약이 표시됩니다:</p>
+<!-- ★ 수정: 결과 검증 로직 보완 -->
+<p><strong>결과 검증 규칙</strong>:</p>
+<p>Synthesize 모드의 Auto Tuning은 <strong>S11/S22 페널티</strong>를 별도로 추적합니다. 최적화 후 S11/S22 페널티가 <strong>초기보다 10% 이상 악화</strong>되면 자동으로 <strong>원본 값으로 복원</strong>됩니다.</p>
+<ul>
+<li><strong>이유</strong>: RL과 TZ 최적화가 S21 Goals만 만족시키고 S11/S22 반사 특성을 악화시키는 것을 방지</li>
+<li><strong>로그 확인</strong>: "⚠ S11/S22가 악화되어 원본 값으로 복원합니다." 메시지 확인</li>
+<li><strong>복원 범위</strong>: RL, TZ 모두 초기값으로 복원 (매트릭스는 영향 없음)</li>
+</ul>
+<p><strong>로그 예시</strong>:</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>Synthesize 모드 최적화는 <strong>TZ와 RL만 조정</strong>하며, <strong>Qu는 절대 변경되지 않습니다</strong> (재료 물성치). 매트릭스(Fi, CBW, Qe)도 전혀 영향을 받지 않습니다.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  맨위로
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sidebar", "navigation.top", "navigation.indexes", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.tabs.link"], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c21346df.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,2603 @@
+
+<!doctype html>
+<html lang="ko" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Coupling Matrix Wizard 2026 Ver 2.0">
+      
+      
+        <meta name="author" content="Partron RF Solution Team">
+      
+      
+      
+        <link rel="prev" href="../ch09/">
+      
+      
+        <link rel="next" href="../appendix/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+    
+    
+      
+        <title>Ch 10. Design Guide - CMW2026 사용자 매뉴얼</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#chapter-10-design-guide" class="md-skip">
+          콘텐츠로 이동
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="상단/헤더">
+    <a href=".." title="CMW2026 사용자 매뉴얼" class="md-header__button md-logo" aria-label="CMW2026 사용자 매뉴얼" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CMW2026 사용자 매뉴얼
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Ch 10. Design Guide
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="light-blue"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="light-blue"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="검색">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="공유" aria-label="공유" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="지우기" aria-label="지우기" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            검색 초기화
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="네비게이션" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="CMW2026 사용자 매뉴얼" class="md-nav__button md-logo" aria-label="CMW2026 사용자 매뉴얼" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    CMW2026 사용자 매뉴얼
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    홈
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ch 1. 개요
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ch 2. 설치 및 라이선스
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ch 3. 화면 구성
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ch 4. Synthesize 모드
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ch 5. Filter(CBW) 모드
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ch 6. 마커 설정
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ch 7. Temp Simulation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ch 8. 메뉴 및 파일 입출력
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ch 9. 용어 정리
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ch 10. Design Guide
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ch 10. Design Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#101-dpx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1 유전체 필터/DPX 설계 전체 흐름
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#102-1-spec" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2 1단계: Spec 분석
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.2 1단계: Spec 분석">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1021" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2.1 확인 항목
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1022-compliance-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2.2 Compliance Matrix 작성
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#103-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3 2단계: 기초 계산
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.3 2단계: 기초 계산">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1031-ideal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3.1 IDEAL 구조 확인
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1032" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3.2 기개발 유사 사양 확인
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1033" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3.3 결정 전 유의사항
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#104-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.4 3단계: 구조 선정
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.4 3단계: 구조 선정">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1041-case-pcb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.4.1 기본 구조 (소체, CASE, PCB) 선정
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#105-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.5 4단계: 자재 검토
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.5 4단계: 자재 검토">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1051" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.5.1 신규 소체 설계 가이드
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1052-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.5.2 신규 CASE 설계 가이드
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1053-pcb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.5.3 신규 PCB 설계 가이드
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#106-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.6 5단계: 단품 필터 설계
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.6 5단계: 단품 필터 설계">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1061" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.6.1 설계 결정 인자
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1062" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.6.2 인아웃 패턴 설계
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1063" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.6.3 커플링 패턴 설계
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1064-tz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.6.4 전송 영점(TZ) 설계 패턴
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1065-full-model-3d" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.6.5 Full Model 3D 설계
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1066" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.6.6 실제 제품 설계 예시
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#107-6-dpx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.7 6단계: DPX 설계 이론
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.7 6단계: DPX 설계 이론">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1071-dpx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.7.1 DPX(듀플렉서) 기본 이론
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1072-dpx-bpfbpf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.7.2 DPX 설계 예시 (BPF+BPF 듀플렉서)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1073-dpx-monoblock-dpx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.7.3 DPX 설계 예시 (Monoblock DPX)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#108-7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.8 7단계: 파우더 선정
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.8 7단계: 파우더 선정">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1081" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.8.1 파우더 재료 특성
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#109-8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.9 8단계: 완제품 검토
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.9 8단계: 완제품 검토">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1091" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.9.1 연마 과정 주의 사항
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1092-laser" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.9.2 인쇄 및 Laser 주의 사항
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1093" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.9.3 솔더 조립 주의 사항
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1094" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.9.4 튜닝 및 패턴 최적화
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1095" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.9.5 최종 점검사항
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1010-cmw2026" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.10 CMW2026과의 연계
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../appendix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    부록 (FAQ)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#101-dpx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1 유전체 필터/DPX 설계 전체 흐름
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#102-1-spec" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2 1단계: Spec 분석
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.2 1단계: Spec 분석">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1021" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2.1 확인 항목
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1022-compliance-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2.2 Compliance Matrix 작성
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#103-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3 2단계: 기초 계산
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.3 2단계: 기초 계산">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1031-ideal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3.1 IDEAL 구조 확인
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1032" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3.2 기개발 유사 사양 확인
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1033" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3.3 결정 전 유의사항
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#104-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.4 3단계: 구조 선정
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.4 3단계: 구조 선정">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1041-case-pcb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.4.1 기본 구조 (소체, CASE, PCB) 선정
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#105-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.5 4단계: 자재 검토
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.5 4단계: 자재 검토">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1051" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.5.1 신규 소체 설계 가이드
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1052-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.5.2 신규 CASE 설계 가이드
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1053-pcb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.5.3 신규 PCB 설계 가이드
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#106-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.6 5단계: 단품 필터 설계
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.6 5단계: 단품 필터 설계">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1061" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.6.1 설계 결정 인자
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1062" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.6.2 인아웃 패턴 설계
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1063" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.6.3 커플링 패턴 설계
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1064-tz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.6.4 전송 영점(TZ) 설계 패턴
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1065-full-model-3d" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.6.5 Full Model 3D 설계
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1066" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.6.6 실제 제품 설계 예시
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#107-6-dpx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.7 6단계: DPX 설계 이론
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.7 6단계: DPX 설계 이론">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1071-dpx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.7.1 DPX(듀플렉서) 기본 이론
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1072-dpx-bpfbpf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.7.2 DPX 설계 예시 (BPF+BPF 듀플렉서)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1073-dpx-monoblock-dpx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.7.3 DPX 설계 예시 (Monoblock DPX)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#108-7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.8 7단계: 파우더 선정
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.8 7단계: 파우더 선정">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1081" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.8.1 파우더 재료 특성
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#109-8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.9 8단계: 완제품 검토
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.9 8단계: 완제품 검토">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1091" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.9.1 연마 과정 주의 사항
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1092-laser" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.9.2 인쇄 및 Laser 주의 사항
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1093" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.9.3 솔더 조립 주의 사항
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1094" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.9.4 튜닝 및 패턴 최적화
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1095" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.9.5 최종 점검사항
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1010-cmw2026" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.10 CMW2026과의 연계
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="chapter-10-design-guide">Chapter 10. Design Guide<a class="headerlink" href="#chapter-10-design-guide" title="Permanent link">&para;</a></h1>
+<p>이 장은 <strong>모노블록 유전체 필터(Monoblock Dielectric Filter)</strong> 의 실제 설계 및 제작 가이드입니다. Partron RF Solution Team의 축적된 노하우를 바탕으로, <strong>스펙 분석 → 기초 계산 → 구조 선정 → 자재 검토 → 단품 설계 → DPX 설계 → 완제품 검토</strong> 의 전체 흐름을 상세히 다룹니다.</p>
+<div class="admonition warning">
+<p class="admonition-title">CONFIDENTIAL</p>
+<p>이 문서는 <strong>Partron 내부 기밀</strong>입니다. 외부 유출을 금합니다.</p>
+</div>
+<hr />
+<h2 id="101-dpx">10.1 유전체 필터/DPX 설계 전체 흐름<a class="headerlink" href="#101-dpx" title="Permanent link">&para;</a></h2>
+<p>유전체 필터 설계는 <strong>6단계</strong>로 진행됩니다.</p>
+<!-- ★ 수정: 이미지 대신 CSS 도형 + 화살표 구조로 변경 -->
+<div class="flow-container">
+  <div class="flow-step">
+    <div class="flow-circle step-blue">1</div>
+    <div class="flow-title">Spec 분석</div>
+  </div>
+  <div class="flow-arrow">➔</div>
+  <div class="flow-step">
+    <div class="flow-circle step-blue">2</div>
+    <div class="flow-title">기초 계산</div>
+  </div>
+  <div class="flow-arrow">➔</div>
+  <div class="flow-step">
+    <div class="flow-circle step-blue">3</div>
+    <div class="flow-title">구조 선정</div>
+  </div>
+  <div class="flow-arrow">➔</div>
+  <div class="flow-step">
+    <div class="flow-circle step-green">4<span class="dr-badge">DR</span></div>
+    <div class="flow-title">자재 검토</div>
+  </div>
+  <div class="flow-arrow">➔</div>
+  <div class="flow-step">
+    <div class="flow-circle step-green">5</div>
+    <div class="flow-title">단품 필터 설계</div>
+  </div>
+  <div class="flow-arrow">➔</div>
+  <div class="flow-step">
+    <div class="flow-circle step-green">6</div>
+    <div class="flow-title">완제품 검토</div>
+  </div>
+</div>
+
+<style>
+/* ─────────────────────────────────────────────
+   설계 흐름도 CSS (10.1절 전용)
+   ───────────────────────────────────────────── */
+.flow-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8px;
+  margin: 30px 0;
+  padding: 20px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  overflow-x: auto;
+}
+
+.flow-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  flex-shrink: 0;
+}
+
+.flow-circle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin-bottom: 12px;
+}
+
+/* 파란색 (1~3단계) */
+.step-blue {
+  background: linear-gradient(135deg, #4a7bc8, #2c5aa0);
+}
+
+/* 초록색 (4~6단계) */
+.step-green {
+  background: linear-gradient(135deg, #4caf82, #2e8b57);
+}
+
+/* DR 배지 (4단계) */
+.dr-badge {
+  position: absolute;
+  bottom: -6px;
+  right: -10px;
+  background: #2c3e50;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 700;
+  padding: 2px 5px;
+  border-radius: 8px;
+  border: 1.5px solid #fff;
+  letter-spacing: 0.5px;
+}
+
+.flow-title {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #2c3e50;
+  text-align: center;
+  line-height: 1.4;
+  word-break: keep-all;
+}
+
+.flow-arrow {
+  font-size: 20px;
+  color: #94a3b8;
+  margin-top: 18px;
+  flex-shrink: 0;
+}
+
+/* 모바일 대응 (세로 배치) */
+@media screen and (max-width: 768px) {
+  .flow-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .flow-arrow {
+    transform: rotate(90deg);
+    margin: 0;
+  }
+}
+</style>
+
+<p><em>그림 10-1: 유전체 필터/DPX 설계 전체 흐름 (6단계)</em></p>
+<table>
+<thead>
+<tr>
+<th>단계</th>
+<th>내용</th>
+<th>주요 활동</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1. Spec 분석</strong></td>
+<td>전기적/물리적 규격, 신뢰성 규격 확인</td>
+<td>Compliance Matrix 작성</td>
+</tr>
+<tr>
+<td><strong>2. 기초 계산</strong></td>
+<td>IDEAL 구조 확인, 기개발 유사 사양 확인</td>
+<td>예상 Qu, 필터 구조, 세라믹/기타 자재 검토</td>
+</tr>
+<tr>
+<td><strong>3. 구조 선정</strong></td>
+<td>소체, 케이스, PCB 선정</td>
+<td>금형 보유 여부 확인, 신규 설계 여부 결정</td>
+</tr>
+<tr>
+<td><strong>4. 자재 검토 (DR)</strong></td>
+<td>부품·자재 검증 및 발주</td>
+<td>신규 자재 설계 후 발주, EM 시뮬레이션</td>
+</tr>
+<tr>
+<td><strong>5. 단품 필터 설계</strong></td>
+<td>기존 금형 사용 또는 신규 금형 설계</td>
+<td>INOUT/Coupling/TZ 패턴 설계</td>
+</tr>
+<tr>
+<td><strong>6. 완제품 검토</strong></td>
+<td>전기적/물리적/온도 특성 검토</td>
+<td>최종 양산성 확인</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">리뷰 포인트</p>
+<ul>
+<li>온도 변화량 감안한 전기적 스펙 마진</li>
+<li>공정 고려한 조립 공차</li>
+<li>신뢰성 고려한 자재 설계</li>
+<li>고객 요구사항에 대한 만족도 리뷰</li>
+</ul>
+</div>
+<hr />
+<h2 id="102-1-spec">10.2 1단계: Spec 분석<a class="headerlink" href="#102-1-spec" title="Permanent link">&para;</a></h2>
+<h3 id="1021">10.2.1 확인 항목<a class="headerlink" href="#1021" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>확인 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Electrical</strong></td>
+<td>일반적인 규격 외의 특이사항 확인</td>
+</tr>
+<tr>
+<td><strong>Mechanical</strong></td>
+<td>고객 요구 상세 디멘전 (도면 형태로 추가)</td>
+</tr>
+<tr>
+<td><strong>Reliability</strong></td>
+<td>내부적으로 검토 불가한 규격 확인</td>
+</tr>
+</tbody>
+</table>
+<h3 id="1022-compliance-matrix">10.2.2 Compliance Matrix 작성<a class="headerlink" href="#1022-compliance-matrix" title="Permanent link">&para;</a></h3>
+<p>고객 요구사항을 <strong>한 장의 Compliance Matrix</strong> 로 정리하여, 모든 스펙을 빠짐없이 검토합니다.</p>
+<hr />
+<h2 id="103-2">10.3 2단계: 기초 계산<a class="headerlink" href="#103-2" title="Permanent link">&para;</a></h2>
+<h3 id="1031-ideal">10.3.1 IDEAL 구조 확인<a class="headerlink" href="#1031-ideal" title="Permanent link">&para;</a></h3>
+<p><a href="../images/ch10/fig-10-02.png" target="_blank">
+  <img src="../images/ch10/fig-10-02.png" alt="Ultra-Fast Realtime Response 및 필터 스펙 입력" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+</a></p>
+<p><em>그림 10-2: CMW2026의 Synthesize 결과 (8-Pole, R/L=20dB, Qu=370)</em></p>
+<ol>
+<li><strong>ATT 요구 규격</strong>에 따라 필터 차수(N), 전송 영점(TZ) 결정</li>
+<li><strong>IL 요구 규격</strong> 만족을 위한 공진기 <strong>Qu 값 계산</strong></li>
+<li>Qu 값을 만족하는 <strong>유전체 블록(사이즈, 유전율) 결정</strong></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">CMW2026 활용</p>
+<p>위 과정은 CMW2026의 <strong>Synthesize 모드</strong>에서 직접 수행할 수 있습니다.
+- <code>N</code>, <code>RL</code>, <code>Qu</code>, <code>F_Start</code>, <code>F_Stop</code> 입력 → <strong>Goals</strong> 설정 → <strong>Auto Tuning</strong>
+- TZ는 <strong>Synthesize TZ 테이블</strong>에서 추가/조정</p>
+</div>
+<h3 id="1032">10.3.2 기개발 유사 사양 확인<a class="headerlink" href="#1032" title="Permanent link">&para;</a></h3>
+<ul>
+<li>기개발 스펙 중 <strong>중심주파수, BW가 유사한 품목</strong> 확인</li>
+<li>유사 규격이 있으면 참고하여 규격 결정</li>
+</ul>
+<h3 id="1033">10.3.3 결정 전 유의사항<a class="headerlink" href="#1033" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>무리한 요구 사양</strong>은 고객과 협의 후 진행</li>
+<li><strong>생산성 및 온도 변화</strong> 감안하여 규격 마진 확보 필수</li>
+</ul>
+<hr />
+<h2 id="104-3">10.4 3단계: 구조 선정<a class="headerlink" href="#104-3" title="Permanent link">&para;</a></h2>
+<h3 id="1041-case-pcb">10.4.1 기본 구조 (소체, CASE, PCB) 선정<a class="headerlink" href="#1041-case-pcb" title="Permanent link">&para;</a></h3>
+<p><a href="../images/ch10/fig-10-03.png" target="_blank">
+  <img src="../images/ch10/fig-10-03.png" alt="소체/CASE/PCB 조립 구조" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+</a></p>
+<p><em>그림 10-3: 소체/CASE/PCB 조립 구조 및 SPACER</em></p>
+<ol>
+<li>기초 계산에서 <strong>필터 차수 결정</strong></li>
+<li>적용 가능한 <strong>기보유 소체 금형</strong> 확인 → 미보유 시 신규 소체 설계</li>
+<li>적용 가능한 <strong>기보유 CASE 금형</strong> 확인 → 미보유 시 신규 CASE 설계</li>
+<li>적용 가능한 <strong>기보유 PCB</strong> 확인 → 미보유 시 신규 설계</li>
+<li><strong>SPACER</strong> 적용 유무 확인</li>
+</ol>
+<hr />
+<h2 id="105-4">10.5 4단계: 자재 검토<a class="headerlink" href="#105-4" title="Permanent link">&para;</a></h2>
+<h3 id="1051">10.5.1 신규 소체 설계 가이드<a class="headerlink" href="#1051" title="Permanent link">&para;</a></h3>
+<p><a href="../images/ch10/fig-10-04.png" target="_blank">
+  <img src="../images/ch10/fig-10-04.png" alt="신규 소체 설계 기준" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+</a></p>
+<p><em>그림 10-4: 신규 소체 설계 기준 (홀 지름, 살 간격, R, 연마 길이)</em></p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>기준</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>공진홀 최소 지름</strong></td>
+<td>0.6 mm</td>
+</tr>
+<tr>
+<td><strong>홀 사이 살 최소 간격</strong></td>
+<td>0.8 mm</td>
+</tr>
+<tr>
+<td><strong>외곽 테두리 자연 R</strong></td>
+<td>0.2 적용</td>
+</tr>
+<tr>
+<td><strong>바닥면 연마 길이</strong></td>
+<td>0.15 ~ 0.2 mm</td>
+</tr>
+<tr>
+<td><strong>외곽 사이즈</strong></td>
+<td>패턴 설계 감안하여 적용</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">연태 소체 성형 기준표</p>
+<p>기보유 금형 소체 제작 시 <strong>연태 소체 성형 기준표</strong>를 따릅니다.
+파우더에 따라 성형 사이즈가 다를 수 있으므로 주의하세요.</p>
+</div>
+<h3 id="1052-case">10.5.2 신규 CASE 설계 가이드<a class="headerlink" href="#1052-case" title="Permanent link">&para;</a></h3>
+<p><a href="../images/ch10/fig-10-05.png" target="_blank">
+  <img src="../images/ch10/fig-10-05.png" alt="신규 CASE 설계 기준" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+</a></p>
+<p><em>그림 10-5: 신규 CASE 설계 기준 (튜닝창, 엣지 브릿지)</em></p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>기준</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>① 모서리 R</strong></td>
+<td>튜닝창 끝부분 ~ 케이스 끝까지 거리</td>
+</tr>
+<tr>
+<td><strong>② 튜닝창 너비</strong></td>
+<td>최소 1.5 이상</td>
+</tr>
+<tr>
+<td><strong>③ 창 사이 살너비</strong></td>
+<td>최소 0.7 이상</td>
+</tr>
+<tr>
+<td><strong>④ 윗면 창 길이</strong></td>
+<td>케이스 조립 간격보다 0.2 크게</td>
+</tr>
+<tr>
+<td><strong>⑤ 엣지 브릿지 살너비</strong></td>
+<td>최소 0.5 이상</td>
+</tr>
+<tr>
+<td><strong>⑥ (Huawei) L</strong></td>
+<td>소체의 75% 이상 규격 (가능한 짧게 설계)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>재질 및 도금</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>고객</th>
+<th>도금 사양</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Huawei</strong></td>
+<td>Ag 1.0um min / 하지 Ni 0.5um min</td>
+</tr>
+<tr>
+<td><strong>삼성네트웍</strong></td>
+<td>Ni 1.0um min</td>
+</tr>
+<tr>
+<td><strong>그 외</strong></td>
+<td>Sn 3.0um min / 하지 Ni 0.5um min</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>케이스 재질</strong>: 일반적으로 <strong>인정동</strong> (상황에 따라 SUS430)</li>
+<li><strong>케이스 두께</strong>: 일반적으로 <strong>0.2T</strong> (특수한 경우 0.15T 또는 0.3T)</li>
+<li><strong>제작 방식</strong>: 최근에는 <strong>선타발 후도금 방식</strong>(릴금형) 주로 채택</li>
+</ul>
+<h3 id="1053-pcb">10.5.3 신규 PCB 설계 가이드<a class="headerlink" href="#1053-pcb" title="Permanent link">&para;</a></h3>
+<p><a href="../images/ch10/fig-10-06.png" target="_blank">
+  <img src="../images/ch10/fig-10-06.png" alt="신규 PCB 설계 기준" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+</a></p>
+<p><em>그림 10-6: 신규 PCB 설계 기준 (OUTLINE, CU층, VIA)</em></p>
+<p><strong>공통 적용 사항</strong>:</p>
+<ul>
+<li>신뢰성(열충격) 확보를 고려한 <strong>솔더 랜드 설계</strong></li>
+<li>단자 주위를 감싸는 형태로 설계하되 <strong>구획을 나눠서 설계</strong></li>
+<li><strong>동노출 방지</strong>: OUTLINE보다 CU층을 0.2 안쪽으로 설계</li>
+<li><strong>과도한 VIA</strong>는 단가 상승 원인 → 불필요한 VIA 삭제</li>
+<li>필터 단자 주위 전송선로 위주로 <strong>VIA 총총(약 1mm 간격)</strong> 설계</li>
+<li><strong>VIA 최소 지름</strong>: 0.25 (티에스 기준), 일반적으로 0.3 이상</li>
+<li><strong>SILK 글자 크기</strong>: 최소 0.8 (1.0 권장)</li>
+<li><strong>MLCC LAND</strong>: 제조사 제공 Recommend 적용, <strong>반드시 양쪽 대칭 설계</strong></li>
+<li><strong>AIR COIL LAND</strong>: 코일 LEAD선이 충분히 솔더링 될 수 있는 영역 확보</li>
+</ul>
+<p><strong>PCB 두께 선정</strong>:</p>
+<ul>
+<li>기본적으로 <strong>고객사 요청사항</strong>에 준함</li>
+<li>FR4 기준 <strong>0.8T</strong>: 동박 포함 두께, 최종 가공 후 0.9T</li>
+<li><strong>0.6T 이하</strong>: 동박 미포함 두께, 최종 가공 후 0.7T + 동박 두께</li>
+<li><strong>SPACER</strong> 적용 시 해당 두께 감안하여 원판 두께 선정</li>
+</ul>
+<p><strong>VIA 솔더 흐름 방지</strong>:</p>
+<ul>
+<li>VIA는 솔더 오픈 영역에서 <strong>최소 0.3mm</strong> 띄워서 설계</li>
+<li>솔더 Top/Bottom이 공통으로 열린 공간에는 <strong>VIA 설계 금지</strong></li>
+</ul>
+<p><strong>ARRAY 브리지 설계</strong>:</p>
+<ul>
+<li>라우팅 시 <strong>소체 손상 방지</strong>를 위해 소체 최외곽에서 <strong>최소 1mm</strong> 떨어진 지점에 브리지 설계</li>
+<li>개발 샘플 진행 시 수작업을 위해 <strong>미싱홀 또는 V-CUT</strong> 적용 필</li>
+</ul>
+<p><strong>Huawei 적용 사항</strong>:</p>
+<ul>
+<li><strong>Halogen Free</strong> 기판 적용 필수</li>
+<li><strong>반스루홀 도금 100%</strong> 적용</li>
+<li>단자 사이즈 관리 기준 명시할 것</li>
+</ul>
+<hr />
+<h2 id="106-5">10.6 5단계: 단품 필터 설계<a class="headerlink" href="#106-5" title="Permanent link">&para;</a></h2>
+<h3 id="1061">10.6.1 설계 결정 인자<a class="headerlink" href="#1061" title="Permanent link">&para;</a></h3>
+<p><a href="../images/ch10/fig-10-07.png" target="_blank">
+  <img src="../images/ch10/fig-10-07.png" alt="필터 설계 결정 인자" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+</a></p>
+<p><em>그림 10-7: 필터 설계 결정 인자 (입출력 Qe, 커플링, 전송 영점)</em></p>
+<table>
+<thead>
+<tr>
+<th>인자</th>
+<th>결정 사항</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>입출력 Qe</strong></td>
+<td>Open 구조, Short 구조, Spurline 적용 유무 결정</td>
+</tr>
+<tr>
+<td><strong>커플링 구성</strong></td>
+<td>Capacitive / Inductive 커플링 배치 결정</td>
+</tr>
+<tr>
+<td><strong>전송 영점 구성</strong></td>
+<td>Cross Coupling 구조 (너치바, 홀너치) 결정</td>
+</tr>
+</tbody>
+</table>
+<h3 id="1062">10.6.2 인아웃 패턴 설계<a class="headerlink" href="#1062" title="Permanent link">&para;</a></h3>
+<p><a href="../images/ch10/fig-10-08.png" target="_blank">
+  <img src="../images/ch10/fig-10-08.png" alt="인아웃 패턴 3종" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+</a></p>
+<p><em>그림 10-8: 인아웃 패턴 3종 (Open, Short, Spurline)</em></p>
+<table>
+<thead>
+<tr>
+<th>구조</th>
+<th>특징</th>
+<th>적용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Open 구조</strong></td>
+<td>가장 일반적인 구조</td>
+<td>대부분의 필터</td>
+</tr>
+<tr>
+<td><strong>Short 구조</strong></td>
+<td>Open 구조에서 구현하기 힘든 Wide BW에 적용</td>
+<td>광대역 필터</td>
+</tr>
+<tr>
+<td><strong>Spurline 적용</strong></td>
+<td>하모닉 저지 성능이 필요한 경우 적용</td>
+<td>하모닉 억제 필요 시</td>
+</tr>
+</tbody>
+</table>
+<p><strong>설계 절차</strong>:</p>
+<ol>
+<li>커플필 프로그램 또는 회로 시뮬레이션을 통해 <strong>이상적인 초단 GD peak 계산</strong></li>
+<li>초단 공진기를 제외한 다른 공진기는 <strong>Short 처리</strong></li>
+<li>이상적인 GD peak 값이 나오도록 <strong>인아웃 크기 조절</strong></li>
+</ol>
+<p><a href="../images/ch10/fig-10-09.png" target="_blank">
+  <img src="../images/ch10/fig-10-09.png" alt="인아웃 패턴 설계 예시" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+</a></p>
+<p><em>그림 10-9: 인아웃 패턴 설계 예시 및 GD peak</em></p>
+<h3 id="1063">10.6.3 커플링 패턴 설계<a class="headerlink" href="#1063" title="Permanent link">&para;</a></h3>
+<p><a href="../images/ch10/fig-10-10.png" target="_blank">
+  <img src="../images/ch10/fig-10-10.png" alt="커플링 패턴 4종" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+</a></p>
+<p><em>그림 10-10: 커플링 패턴 4종 (L 커플링 2종, C 커플링 2종)</em></p>
+<table>
+<thead>
+<tr>
+<th>패턴</th>
+<th>특징</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>① L 커플링 기본</strong></td>
+<td>BAR 길이로 커플링 크기 조절</td>
+</tr>
+<tr>
+<td><strong>② L 커플링 (하모닉 개선)</strong></td>
+<td>하모닉 특성 개선 효과, BW가 맞지 않으면 적용 어려움</td>
+</tr>
+<tr>
+<td><strong>③ C 커플링 기본</strong></td>
+<td>패턴 간 GAP 조절로 커플링 크기 조절</td>
+</tr>
+<tr>
+<td><strong>④ C 커플링 (Wideband)</strong></td>
+<td>Wideband 구현 시 커플링 값 극대화</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">커플링 선택 가이드</p>
+<ul>
+<li><strong>L 커플링</strong> → HIGH 밴드 ATT 성능 강화에 유리</li>
+<li><strong>C 커플링</strong> → LOW 밴드 ATT 성능 강화에 유리</li>
+</ul>
+</div>
+<h3 id="1064-tz">10.6.4 전송 영점(TZ) 설계 패턴<a class="headerlink" href="#1064-tz" title="Permanent link">&para;</a></h3>
+<p><strong>양단 너치 구현 BAR 패턴 (2종)</strong></p>
+<p><a href="../images/ch10/fig-10-11.png" target="_blank">
+  <img src="../images/ch10/fig-10-11.png" alt="양단 너치 BAR 패턴 2종" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+</a></p>
+<p><em>그림 10-11: 양단 너치 구현 BAR 패턴 2종</em></p>
+<table>
+<thead>
+<tr>
+<th>패턴</th>
+<th>특징</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>① 대칭형 패턴</strong></td>
+<td>성능 최적화 편리하지만 양단 너치 밸런스 조절 불가</td>
+</tr>
+<tr>
+<td><strong>② 비대칭 패턴</strong></td>
+<td>최적화 난이도는 높으나 양단 너치 밸런스 조절 가능</td>
+</tr>
+</tbody>
+</table>
+<p><strong>단방향 너치 구현 BAR 패턴 (4종)</strong></p>
+<p><a href="../images/ch10/fig-10-12.png" target="_blank">
+  <img src="../images/ch10/fig-10-12.png" alt="단방향 너치 BAR 패턴 4종" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+</a></p>
+<p><em>그림 10-12: 단방향 너치 BAR 패턴 4종</em></p>
+<table>
+<thead>
+<tr>
+<th>패턴</th>
+<th>특징</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>① 하단 주파수 TZ</strong></td>
+<td>길이 조절로 비교적 너치 위치 조절 자유로움</td>
+</tr>
+<tr>
+<td><strong>② 상단 주파수 TZ</strong></td>
+<td>길이 조절로 비교적 너치 위치 조절 자유로움</td>
+</tr>
+<tr>
+<td><strong>③ 하단 주파수 TZ (INOUT 연결)</strong></td>
+<td>인아웃 패턴과 연결되어 컨트롤 난이도 중간</td>
+</tr>
+<tr>
+<td><strong>④ 상단 주파수 TZ (INOUT 연결)</strong></td>
+<td>인아웃 패턴과 연결되어 컨트롤 난이도 중간</td>
+</tr>
+</tbody>
+</table>
+<p><strong>공진홀 튜닝형 너치 패턴 (2종)</strong></p>
+<p><a href="../images/ch10/fig-10-13.png" target="_blank">
+  <img src="../images/ch10/fig-10-13.png" alt="공진홀 튜닝형 너치 패턴 2종" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+</a></p>
+<p><em>그림 10-13: 공진홀 튜닝형 너치 패턴 2종</em></p>
+<table>
+<thead>
+<tr>
+<th>패턴</th>
+<th>특징</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>① 하단 주파수 TZ</strong></td>
+<td>공진홀 튜닝으로 미세하게 TZ 위치 조절 가능</td>
+</tr>
+<tr>
+<td><strong>② 상단 주파수 TZ</strong></td>
+<td>공진홀 튜닝으로 미세하게 TZ 위치 조절 가능</td>
+</tr>
+</tbody>
+</table>
+<h3 id="1065-full-model-3d">10.6.5 Full Model 3D 설계<a class="headerlink" href="#1065-full-model-3d" title="Permanent link">&para;</a></h3>
+<p><a href="../images/ch10/fig-10-14.png" target="_blank">
+  <img src="../images/ch10/fig-10-14.png" alt="Full Model 3D 설계" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+</a></p>
+<p><em>그림 10-14: Full Model 3D 설계 (Lumped Port 설정)</em></p>
+<p><strong>절차</strong>:</p>
+<ol>
+<li><strong>HFSS 또는 CST</strong>로 3D Full 모델링</li>
+<li>계산된 GD peak가 나오도록 <strong>초단 INOUT 형상 설계</strong></li>
+<li>각 공진기에 <strong>Lumped Port</strong> 설정 후 <strong>sNp 파일 추출</strong> (7-pole의 경우 S9P)</li>
+</ol>
+<p><a href="../images/ch10/fig-10-15.png" target="_blank">
+  <img src="../images/ch10/fig-10-15.png" alt="회로 시뮬레이션 최적화" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+</a></p>
+<p><em>그림 10-15: 회로 시뮬레이션으로 C값 최적화 후 3D 물리 변수로 변환</em></p>
+<p><strong>회로 시뮬레이션 최적화</strong>:</p>
+<ol>
+<li>sNp 파일을 <strong>회로 시뮬레이션</strong>(예: ADS)으로 불러와 각 공진기에 <strong>C 연결</strong></li>
+<li>연결된 C를 튜닝하여 <strong>특성 최적화</strong></li>
+<li>최적화된 C값을 <strong>3D 물리 변수</strong>로 변환하여 시뮬레이션 반복</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">CMW2026 활용</p>
+<p>3D Full Model에서 추출한 sNp 파일을 CMW2026의 <strong>Import s2p</strong>(오버레이 비교)로 불러와, 현재 매트릭스 파형과 비교할 수 있습니다.</p>
+</div>
+<h3 id="1066">10.6.6 실제 제품 설계 예시<a class="headerlink" href="#1066" title="Permanent link">&para;</a></h3>
+<p><a href="../images/ch10/fig-10-16.png" target="_blank">
+  <img src="../images/ch10/fig-10-16.png" alt="실제 제품 설계 예시" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+</a></p>
+<p><em>그림 10-16: 실제 제품 설계 예시 (패턴별 TZ 형성)</em></p>
+<table>
+<thead>
+<tr>
+<th>패턴</th>
+<th>역할</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1번 패턴</strong></td>
+<td>HIGH 주파수 전송 영점 형성</td>
+</tr>
+<tr>
+<td><strong>2번 패턴</strong></td>
+<td>LOW, HIGH 양단 전송 영점 형성</td>
+</tr>
+<tr>
+<td><strong>3번 패턴</strong></td>
+<td>LOW 주파수 전송 영점 형성</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="107-6-dpx">10.7 6단계: DPX 설계 이론<a class="headerlink" href="#107-6-dpx" title="Permanent link">&para;</a></h2>
+<h3 id="1071-dpx">10.7.1 DPX(듀플렉서) 기본 이론<a class="headerlink" href="#1071-dpx" title="Permanent link">&para;</a></h3>
+<p><a href="../images/ch10/fig-10-17.png" target="_blank">
+  <img src="../images/ch10/fig-10-17.png" alt="DPX 기본 이론 (BPF+BPF)" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+</a></p>
+<p><em>그림 10-17: DPX 기본 이론 (BPF+BPF, Smith Chart 위상 변환)</em></p>
+<ul>
+<li><strong>DPX = BPF + BPF</strong></li>
+<li>서로 다른 대역의 BPF 2개를 선정하여 DPX 제작 시, <strong>미스매칭</strong>에 의해 성능 구현이 안 됨</li>
+<li>BPF의 <strong>스미스차트에서 상대 대역의 위치가 OPEN점</strong>에 위치하도록 <strong>위상 변환 설계</strong></li>
+<li>단 필터 간 주파수가 가깝거나 BW가 넓은 경우 <strong>추가적인 필터 초단(ANT) 패턴 설계 변경</strong>이 필요</li>
+</ul>
+<h3 id="1072-dpx-bpfbpf">10.7.2 DPX 설계 예시 (BPF+BPF 듀플렉서)<a class="headerlink" href="#1072-dpx-bpfbpf" title="Permanent link">&para;</a></h3>
+<p><a href="../images/ch10/fig-10-18.png" target="_blank">
+  <img src="../images/ch10/fig-10-18.png" alt="DPX 설계 예시 (BPF+BPF)" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+</a></p>
+<p><em>그림 10-18: DPX 설계 예시 (BPF+BPF 듀플렉서, 매칭/위상천이)</em></p>
+<p><strong>설계 절차</strong>:</p>
+<ol>
+<li><strong>BPF2를 오픈</strong>시킨 후, BPF1에 적당한 <strong>L, C로 매칭</strong>하여 상대 대역을 <strong>OPEN점으로 이동</strong>
+   (이때 BPF1 대역은 50Ω 매칭)</li>
+<li><strong>BPF1을 오픈</strong>시킨 후, BPF2에 적당한 <strong>L, C로 매칭</strong>하여 상대 대역을 <strong>OPEN점으로 이동</strong>
+   (이때 BPF2 대역은 50Ω 매칭)</li>
+<li>각각의 매칭값을 찾은 후, <strong>모든 소자를 연결</strong>하여 특성 확인 및 <strong>추가 미세 Lumped 값 튜닝</strong></li>
+<li>Lumped 매칭으로 부족한 부분은 <strong>필터 패턴 추가 튜닝 최적화</strong></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>전송선로 이용 시 라인이 길어질 수 있어, <strong>Lumped LC 소자</strong>를 이용한 매칭이 일반적입니다.</p>
+</div>
+<h3 id="1073-dpx-monoblock-dpx">10.7.3 DPX 설계 예시 (Monoblock DPX)<a class="headerlink" href="#1073-dpx-monoblock-dpx" title="Permanent link">&para;</a></h3>
+<p><a href="../images/ch10/fig-10-19.png" target="_blank">
+  <img src="../images/ch10/fig-10-19.png" alt="Monoblock DPX 설계 예시" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+</a></p>
+<p><em>그림 10-19: Monoblock DPX 설계 예시 (RX/TX/ANT 패턴 통합)</em></p>
+<p><strong>설계 절차</strong>:</p>
+<ol>
+<li><strong>RX BPF 패턴</strong> 설계</li>
+<li><strong>TX BPF 패턴</strong> 설계</li>
+<li><strong>ANT 인아웃 패턴 및 공진기</strong> 설계
+   (계산값과 같은 딜레이가 나오도록 패턴 설계)</li>
+<li>각각 설계된 패턴을 <strong>모두 합친 후 추가 최적화</strong> 진행</li>
+</ol>
+<hr />
+<h2 id="108-7">10.8 7단계: 파우더 선정<a class="headerlink" href="#108-7" title="Permanent link">&para;</a></h2>
+<h3 id="1081">10.8.1 파우더 재료 특성<a class="headerlink" href="#1081" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>파우더명</th>
+<th>공급사</th>
+<th>ER</th>
+<th>수축율</th>
+<th>FQ</th>
+<th>tanδ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MWF-5N</td>
+<td>하야사</td>
+<td>5.9</td>
+<td>17.15</td>
+<td>4216</td>
+<td>0.000218</td>
+</tr>
+<tr>
+<td>MWF-09G</td>
+<td>하야사</td>
+<td>9.8</td>
+<td>17.21</td>
+<td>4240</td>
+<td>0.000224</td>
+</tr>
+<tr>
+<td>MWF-13</td>
+<td>하야사</td>
+<td>14.3</td>
+<td>16.69</td>
+<td>4248</td>
+<td>0.000184</td>
+</tr>
+<tr>
+<td>IM-K20HF</td>
+<td>INANOTECH</td>
+<td>20.8</td>
+<td>17.51</td>
+<td>6522</td>
+<td>0.000120</td>
+</tr>
+<tr>
+<td>IM-K22</td>
+<td>INANOTECH</td>
+<td>22.1</td>
+<td>15.56</td>
+<td>6249</td>
+<td>0.000118</td>
+</tr>
+<tr>
+<td>MWF-38U</td>
+<td>하야사</td>
+<td>38.5</td>
+<td>16.78</td>
+<td>5108</td>
+<td>0.000098</td>
+</tr>
+<tr>
+<td>MWF-45FT-LT</td>
+<td>하야사</td>
+<td>45.2</td>
+<td>15.71</td>
+<td>3909</td>
+<td>0.000116</td>
+</tr>
+<tr>
+<td>MWF-93FN</td>
+<td>하야사</td>
+<td>92.2</td>
+<td>16.14</td>
+<td>658</td>
+<td>0.000488</td>
+</tr>
+<tr>
+<td>IM-K120</td>
+<td>INANOTECH</td>
+<td>115.9</td>
+<td>13.85</td>
+<td>2768</td>
+<td>0.001161</td>
+</tr>
+<tr>
+<td>IM-K140</td>
+<td>INANOTECH</td>
+<td>142.2</td>
+<td>15.22</td>
+<td>2634</td>
+<td>0.001125</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">파우더 선정 기준</p>
+<p><strong>고객사 요청 디멘전 만족을 최우선</strong>으로 하고, <strong>손실과 하모닉을 고려</strong>하여 파우더 선정</p>
+</div>
+<hr />
+<h2 id="109-8">10.9 8단계: 완제품 검토<a class="headerlink" href="#109-8" title="Permanent link">&para;</a></h2>
+<h3 id="1091">10.9.1 연마 과정 주의 사항<a class="headerlink" href="#1091" title="Permanent link">&para;</a></h3>
+<p><a href="../images/ch10/fig-10-20.png" target="_blank">
+  <img src="../images/ch10/fig-10-20.png" alt="연마 과정 주의 사항" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+</a></p>
+<p><em>그림 10-20: 연마 과정 주의 사항 (홀막힘, Ag 탈락, 소체 표면 파손)</em></p>
+<p><strong>높이 연마 기준</strong>:</p>
+<ul>
+<li>PAD 인쇄 두께, 솔더 조립 두께 감안하여 <strong>케이스 높이보다 0.03mm 짧게</strong> 연마</li>
+<li><strong>홀이 막힌 소체</strong>는 내부 디핑 불량 확률이 높으므로 <strong>사용하지 않음</strong></li>
+<li>연마 과정 중 발생한 <strong>Ag 탈락 및 소체 표면 파손</strong> 소체는 <strong>사용하지 않음</strong></li>
+<li>소체 횡방향 확인하여 <strong>불록한 부분을 위로 가게</strong> 적재 후 연마 진행</li>
+</ul>
+<h3 id="1092-laser">10.9.2 인쇄 및 Laser 주의 사항<a class="headerlink" href="#1092-laser" title="Permanent link">&para;</a></h3>
+<p><a href="../images/ch10/fig-10-21.png" target="_blank">
+  <img src="../images/ch10/fig-10-21.png" alt="인쇄 및 Laser 주의 사항" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+</a></p>
+<p><em>그림 10-21: 인쇄 스크린 도면 및 Laser 가공 도면</em></p>
+<ul>
+<li>인쇄 스크린 도면은 <strong>실제 패턴 사이즈와 동일</strong>하게 작성</li>
+<li>모서리 외곽으로 <strong>0.2mm 크게</strong> 도면 작성 필요</li>
+<li>Laser 작업 시 실제 패턴보다 <strong>0.015mm 옵셋</strong> 설정 필요</li>
+<li>도면 대비 가공면이 크게, 패턴이 작게 형성됨</li>
+<li><strong>PAD면 Laser 가공 시 치수 확인 후 보정 필수</strong></li>
+<li>패턴의 <strong>최소 Width: 0.2mm, Gap: 0.1mm</strong> 적용하여 설계</li>
+<li>좀 더 작게 설계할 경우 <strong>오픈 또는 쇼트 위험</strong></li>
+</ul>
+<p><a href="../images/ch10/fig-10-22.png" target="_blank">
+  <img src="../images/ch10/fig-10-22.png" alt="인쇄 불량 사례" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+</a></p>
+<p><em>그림 10-22: 인쇄 불량 사례 (모서리 연결부, PORT 연결부, PORT GAP 미세 쇼트)</em></p>
+<p><strong>인쇄 품질 관리</strong>:</p>
+<ul>
+<li>공판 인쇄 및 건조 후 <strong>표면 인쇄 상태 육안 확인</strong> (Ag 탈락부위, 메쉬자국)</li>
+<li><strong>PAD-TOP 연결 모서리</strong> 부분이 인쇄 두께 취약 → <strong>현미경 관리</strong></li>
+<li>패턴 가공 후 <strong>PAD-TOP PORT 연결 부위 일치 여부</strong> 확인 필수</li>
+<li><strong>PAD-TOP 연결 모서리 PORT GAP 부분 미세 쇼트 제거</strong> 철저</li>
+<li>미세 쇼트 상태에서도 특성이 나올 수 있으므로, <strong>쇼트 상태에서 최적화가 이루어지지 않도록 주의</strong></li>
+</ul>
+<h3 id="1093">10.9.3 솔더 조립 주의 사항<a class="headerlink" href="#1093" title="Permanent link">&para;</a></h3>
+<p><a href="../images/ch10/fig-10-23.png" target="_blank">
+  <img src="../images/ch10/fig-10-23.png" alt="솔더 조립 불량 사례" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+</a></p>
+<p><em>그림 10-23: 솔더 조립 불량 사례 (냉납, 솔더 필렛, 리칭)</em></p>
+<ul>
+<li><strong>케이스 조립 시</strong> 고객사별 솔더 구분 적용</li>
+<li>삼성: <strong>단양</strong></li>
+<li>Huawei: <strong>CVP-390</strong></li>
+<li>그 외: <strong>OL-213</strong></li>
+<li><strong>PCB 조립 시</strong>: <strong>OL-213</strong> 솔더 적용</li>
+<li>조립 후 <strong>냉납, 솔더 필렛 형성 유무, 리칭 여부</strong> 확인 필수</li>
+<li>조립 후 <strong>플럭스 세척 필수</strong> 진행 (초음파 세척 시 <strong>180초 이내</strong>, 장시간 진행 시 Ag 벗겨질 수 있음)</li>
+</ul>
+<h3 id="1094">10.9.4 튜닝 및 패턴 최적화<a class="headerlink" href="#1094" title="Permanent link">&para;</a></h3>
+<p><a href="../images/ch10/fig-10-24.png" target="_blank">
+  <img src="../images/ch10/fig-10-24.png" alt="튜닝 및 패턴 최적화" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+</a></p>
+<p><em>그림 10-24: 튜닝 시 단선 위험 및 BURR로 인한 SHORT</em></p>
+<ul>
+<li><strong>후면 패턴</strong>은 공진기 성능 저하 → 가능한 <strong>TOP면에서 패턴 최적화</strong> 진행</li>
+<li>부득이 후면 패턴 필요 시 <strong>바닥면에서 최소 0.5mm 이상</strong> 떨어지게 설계</li>
+<li>튜닝성을 고려하여 <strong>인접한 패턴을 가능한 피해서</strong> 설계</li>
+<li>패턴은 가능한 <strong>단순하게 설계</strong>하고, <strong>튜닝을 위한 패턴을 필히 남겨 놓아야</strong> 함</li>
+<li>미세하고 복잡한 패턴 부위는 <strong>단선 및 쇼트 우려</strong> → 가급적 튜닝 자재</li>
+<li>튜닝에 의한 <strong>Ag 밀림으로 인한 미세 BURR 제거</strong> 확인 필수 (고객사 유출 시 불량 발생 위험)</li>
+</ul>
+<h3 id="1095">10.9.5 최종 점검사항<a class="headerlink" href="#1095" title="Permanent link">&para;</a></h3>
+<p>완제품 출하 전 다음 항목을 <strong>반드시</strong> 확인합니다.</p>
+<table>
+<thead>
+<tr>
+<th>점검 항목</th>
+<th>OK</th>
+<th>NG</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>고객 요청 전기적 특성을 모두 만족하는가?</td>
+<td>☐</td>
+<td>☐</td>
+</tr>
+<tr>
+<td>고객 요청 치수 규격을 모두 만족하는가?</td>
+<td>☐</td>
+<td>☐</td>
+</tr>
+<tr>
+<td>동작 온도 범위에서 규격을 모두 만족하는가?</td>
+<td>☐</td>
+<td>☐</td>
+</tr>
+<tr>
+<td>외관 (이물, 세척, 플럭스 등) 상태 확인되었는가?</td>
+<td>☐</td>
+<td>☐</td>
+</tr>
+<tr>
+<td>솔더 접합(필렛, 리칭) 상태가 양호한가?</td>
+<td>☐</td>
+<td>☐</td>
+</tr>
+<tr>
+<td>(DPX) 사양서와 실제품의 포트 방향이 일치하는가?</td>
+<td>☐</td>
+<td>☐</td>
+</tr>
+<tr>
+<td>평탄도 규격을 만족하는가?</td>
+<td>☐</td>
+<td>☐</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="1010-cmw2026">10.10 CMW2026과의 연계<a class="headerlink" href="#1010-cmw2026" title="Permanent link">&para;</a></h2>
+<p>이 설계 가이드는 CMW2026의 다음 기능과 직접 연결됩니다.</p>
+<table>
+<thead>
+<tr>
+<th>설계 단계</th>
+<th>CMW2026 활용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>2. 기초 계산</strong></td>
+<td>Synthesize 모드 → Chebyshev 합성 → 이상 파형</td>
+</tr>
+<tr>
+<td><strong>5. 단품 설계 (TZ)</strong></td>
+<td>Filter 모드 → Cross-Coupling 입력 → TZ 생성</td>
+</tr>
+<tr>
+<td><strong>5. 단품 설계 (튜닝)</strong></td>
+<td>Auto Tuning → Goals 달성</td>
+</tr>
+<tr>
+<td><strong>5. Full Model 검증</strong></td>
+<td>Import s2p → 오버레이 비교</td>
+</tr>
+<tr>
+<td><strong>8. 완제품 검토 (온도)</strong></td>
+<td>Temp Simulation → 온도 마진 확인</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<div class="admonition note">
+<p class="admonition-title">이미지 파일 목록</p>
+<p><code>ch10.md</code>에서 참조하는 이미지는 다음 경로에 저장해 주세요.</p>
+<table>
+<thead>
+<tr>
+<th>파일</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>fig-10-01.png</code></td>
+<td>유전체 필터/DPX 설계 전체 흐름 (6단계)</td>
+</tr>
+<tr>
+<td><code>fig-10-02.png</code></td>
+<td>Ultra-Fast Realtime Response + 필터 스펙</td>
+</tr>
+<tr>
+<td><code>fig-10-03.png</code></td>
+<td>소체/CASE/PCB 조립 구조</td>
+</tr>
+<tr>
+<td><code>fig-10-04.png</code></td>
+<td>신규 소체 설계 기준</td>
+</tr>
+<tr>
+<td><code>fig-10-05.png</code></td>
+<td>신규 CASE 설계 기준</td>
+</tr>
+<tr>
+<td><code>fig-10-06.png</code></td>
+<td>신규 PCB 설계 기준</td>
+</tr>
+<tr>
+<td><code>fig-10-07.png</code></td>
+<td>필터 설계 결정 인자</td>
+</tr>
+<tr>
+<td><code>fig-10-08.png</code></td>
+<td>인아웃 패턴 3종</td>
+</tr>
+<tr>
+<td><code>fig-10-09.png</code></td>
+<td>인아웃 패턴 설계 예시 + GD peak</td>
+</tr>
+<tr>
+<td><code>fig-10-10.png</code></td>
+<td>커플링 패턴 4종</td>
+</tr>
+<tr>
+<td><code>fig-10-11.png</code></td>
+<td>양단 너치 BAR 패턴 2종</td>
+</tr>
+<tr>
+<td><code>fig-10-12.png</code></td>
+<td>단방향 너치 BAR 패턴 4종</td>
+</tr>
+<tr>
+<td><code>fig-10-13.png</code></td>
+<td>공진홀 튜닝형 너치 패턴 2종</td>
+</tr>
+<tr>
+<td><code>fig-10-14.png</code></td>
+<td>Full Model 3D 설계</td>
+</tr>
+<tr>
+<td><code>fig-10-15.png</code></td>
+<td>회로 시뮬레이션 최적화</td>
+</tr>
+<tr>
+<td><code>fig-10-16.png</code></td>
+<td>실제 제품 설계 예시</td>
+</tr>
+<tr>
+<td><code>fig-10-17.png</code></td>
+<td>DPX 기본 이론</td>
+</tr>
+<tr>
+<td><code>fig-10-18.png</code></td>
+<td>DPX 설계 예시 (BPF+BPF)</td>
+</tr>
+<tr>
+<td><code>fig-10-19.png</code></td>
+<td>Monoblock DPX 설계 예시</td>
+</tr>
+<tr>
+<td><code>fig-10-20.png</code></td>
+<td>연마 과정 주의 사항</td>
+</tr>
+<tr>
+<td><code>fig-10-21.png</code></td>
+<td>인쇄 및 Laser 주의 사항</td>
+</tr>
+<tr>
+<td><code>fig-10-22.png</code></td>
+<td>인쇄 불량 사례</td>
+</tr>
+<tr>
+<td><code>fig-10-23.png</code></td>
+<td>솔더 조립 불량 사례</td>
+</tr>
+<tr>
+<td><code>fig-10-24.png</code></td>
+<td>튜닝 및 패턴 최적화</td>
+</tr>
+</tbody>
+</table>
+<p>이미지 캡처 시 <strong>1920×1080 이상 해상도</strong>를 권장하며, PDF 페이지별 이미지를 그대로 캡처하여 위 파일명으로 저장하시면 됩니다.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  맨위로
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sidebar", "navigation.top", "navigation.indexes", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.tabs.link"], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c21346df.min.js"></script>
+      
+    
+  </body>
+</html>

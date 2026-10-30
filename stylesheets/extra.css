@@ -1,0 +1,146 @@
+/* =========================================================
+   CMW2026 사용자 매뉴얼 - 좌측 사이드바 해칭 스타일
+   ========================================================= */
+
+/* ─────────────────────────────────────────────
+   1. 좌측 사이드바(nav) 해칭 배경
+   ─────────────────────────────────────────────
+   - 파스텔 블루 계열 해칭 패턴
+   - 45도 대각선 빗금
+   - 사이드바는 스크롤되므로 배경도 함께 고정
+*/
+.md-sidebar--primary .md-sidebar__scrollwrap {
+  /* 해칭 패턴 + 부드러운 그라데이션 */
+  background-image:
+    /* 위→아래 부드러운 흰색 페이드 (텍스트 가독성 확보) */
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.85) 0%,
+      rgba(255, 255, 255, 0.55) 100%
+    ),
+    /* 45도 대각선 해칭 */
+    repeating-linear-gradient(
+      45deg,
+      rgba(123, 167, 217, 0.10) 0px,
+      rgba(123, 167, 217, 0.10) 6px,
+      transparent 6px,
+      transparent 12px
+    );
+  background-color: #f5f8fb;   /* 연한 파스텔 배경 */
+  border-radius: 8px;
+  padding: 10px 6px;
+  margin: 0 4px;
+}
+
+/* ─────────────────────────────────────────────
+   2. 사이드바 제목 (nav title)
+   ─────────────────────────────────────────────
+*/
+.md-sidebar--primary .md-nav__title {
+  font-weight: 700;
+  color: #2c3e50;
+  border-bottom: 2px solid rgba(123, 167, 217, 0.4);
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  letter-spacing: -0.01em;
+}
+
+/* ─────────────────────────────────────────────
+   3. 사이드바 링크 스타일
+   ─────────────────────────────────────────────
+*/
+.md-sidebar--primary .md-nav__link {
+  border-radius: 6px;
+  padding: 6px 10px;
+  margin: 2px 0;
+  transition: background 0.15s ease, transform 0.15s ease;
+  font-size: 13.5px;
+}
+
+.md-sidebar--primary .md-nav__link:hover {
+  background: rgba(123, 167, 217, 0.18);
+  transform: translateX(2px);
+}
+
+/* 활성(현재 페이지) 링크 강조 */
+.md-sidebar--primary .md-nav__link--active {
+  background: linear-gradient(
+    90deg,
+    rgba(123, 167, 217, 0.30) 0%,
+    rgba(169, 155, 196, 0.20) 100%
+  );
+  color: #2c3e50 !important;
+  font-weight: 700;
+  box-shadow: inset 3px 0 0 0 #7ba7d9;
+}
+
+/* ─────────────────────────────────────────────
+   4. 다크 모드(slate) 대응
+   ─────────────────────────────────────────────
+*/
+[data-md-color-scheme="slate"] .md-sidebar--primary .md-sidebar__scrollwrap {
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(30, 40, 55, 0.85) 0%,
+      rgba(30, 40, 55, 0.60) 100%
+    ),
+    repeating-linear-gradient(
+      45deg,
+      rgba(123, 167, 217, 0.10) 0px,
+      rgba(123, 167, 217, 0.10) 6px,
+      transparent 6px,
+      transparent 12px
+    );
+  background-color: #1a2432;
+}
+
+[data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__title {
+  color: #e0e6ed;
+  border-bottom-color: rgba(123, 167, 217, 0.5);
+}
+
+[data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__link:hover {
+  background: rgba(123, 167, 217, 0.22);
+}
+
+[data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__link--active {
+  background: linear-gradient(
+    90deg,
+    rgba(123, 167, 217, 0.35) 0%,
+    rgba(169, 155, 196, 0.25) 100%
+  );
+  color: #f5f8fb !important;
+  box-shadow: inset 3px 0 0 0 #7ba7d9;
+}
+
+/* ─────────────────────────────────────────────
+   5. 모바일(작은 화면)에서는 해칭 제거
+   ─────────────────────────────────────────────
+   - 작은 화면에서는 사이드바가 drawer로 열리므로
+     해칭이 오히려 시야를 방해할 수 있음
+*/
+@media screen and (max-width: 76.1875em) {
+  .md-sidebar--primary .md-sidebar__scrollwrap {
+    background-image: none;
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+/* ─────────────────────────────────────────────
+   6. 사이드바 스크롤바 스타일 (선택)
+   ─────────────────────────────────────────────
+*/
+.md-sidebar--primary .md-sidebar__scrollwrap::-webkit-scrollbar {
+  width: 6px;
+}
+.md-sidebar--primary .md-sidebar__scrollwrap::-webkit-scrollbar-thumb {
+  background: rgba(123, 167, 217, 0.4);
+  border-radius: 3px;
+}
+.md-sidebar--primary .md-sidebar__scrollwrap::-webkit-scrollbar-thumb:hover {
+  background: rgba(123, 167, 217, 0.65);
+}
