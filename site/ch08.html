@@ -1,0 +1,1337 @@
+
+<!doctype html>
+<html lang="ko" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Coupling Matrix Wizard 2026 Ver 2.0">
+      
+      
+        <meta name="author" content="Partron RF Solution Team">
+      
+      
+      
+        <link rel="prev" href="ch07.html">
+      
+      
+        <link rel="next" href="ch09.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+    
+    
+      
+        <title>Ch 8. 메뉴 및 파일 입출력 - CMW2026 사용자 매뉴얼</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+        <script src="https://unpkg.com/iframe-worker/shim"></script>
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#chapter-8" class="md-skip">
+          콘텐츠로 이동
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="상단/헤더">
+    <a href="index.html" title="CMW2026 사용자 매뉴얼" class="md-header__button md-logo" aria-label="CMW2026 사용자 매뉴얼" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CMW2026 사용자 매뉴얼
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Ch 8. 메뉴 및 파일 입출력
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="light-blue"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="light-blue"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="검색">
+        
+        <button type="reset" class="md-search__icon md-icon" title="지우기" aria-label="지우기" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            검색 초기화
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="네비게이션" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="CMW2026 사용자 매뉴얼" class="md-nav__button md-logo" aria-label="CMW2026 사용자 매뉴얼" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    CMW2026 사용자 매뉴얼
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    홈
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ch01.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ch 1. 개요
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ch02.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ch 2. 설치 및 라이선스
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ch03.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ch 3. 화면 구성
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ch04.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ch 4. Synthesize 모드
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ch05.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ch 5. Filter(CBW) 모드
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ch06.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ch 6. 마커 설정
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ch07.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ch 7. Temp Simulation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ch 8. 메뉴 및 파일 입출력
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="ch08.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ch 8. 메뉴 및 파일 입출력
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#81" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 메뉴바 전체 구성 개요
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#82-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 File 메뉴 (프로젝트 관리)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.2 File 메뉴 (프로젝트 관리)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#821-save-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.1 Save File (저장)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#822-save-as-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.2 Save As File (다른 이름으로 저장)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#823-open-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.3 Open File (열기)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#824-clear-all" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.4 Clear All (전체 초기화)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#825-exit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.5 Exit (종료)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#83-export" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 Export 메뉴 (데이터 내보내기)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.3 Export 메뉴 (데이터 내보내기)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#831-graph-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3.1 Graph Image (그래프 이미지 저장)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#832-matrix-csv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3.2 Matrix (매트릭스 CSV 내보내기)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#833-export-goals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3.3 Export Goals (목표 마스크 내보내기)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#834-k-inverter-k-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3.4 K-Inverter (K-인버터 변환)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#835-s2p-file-s-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3.5 s2p File (S-파라미터 내보내기)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#836-circuit-schematic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3.6 Circuit Schematic (회로 개략도)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#84-import" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 Import 메뉴 (데이터 불러오기)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.4 Import 메뉴 (데이터 불러오기)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#841-matrix-csv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4.1 Matrix (매트릭스 CSV 불러오기)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#842-import-mask" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4.2 Import Mask (목표 마스크 불러오기)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#843-import-s2p-s2p" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4.3 Import s2p (외부 s2p 오버레이 비교)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ch09.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ch 9. 용어 정리
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ch10.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ch 10. Design Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="appendix.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    부록 (FAQ)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#81" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 메뉴바 전체 구성 개요
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#82-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 File 메뉴 (프로젝트 관리)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.2 File 메뉴 (프로젝트 관리)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#821-save-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.1 Save File (저장)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#822-save-as-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.2 Save As File (다른 이름으로 저장)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#823-open-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.3 Open File (열기)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#824-clear-all" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.4 Clear All (전체 초기화)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#825-exit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.5 Exit (종료)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#83-export" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 Export 메뉴 (데이터 내보내기)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.3 Export 메뉴 (데이터 내보내기)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#831-graph-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3.1 Graph Image (그래프 이미지 저장)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#832-matrix-csv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3.2 Matrix (매트릭스 CSV 내보내기)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#833-export-goals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3.3 Export Goals (목표 마스크 내보내기)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#834-k-inverter-k-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3.4 K-Inverter (K-인버터 변환)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#835-s2p-file-s-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3.5 s2p File (S-파라미터 내보내기)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#836-circuit-schematic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3.6 Circuit Schematic (회로 개략도)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#84-import" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 Import 메뉴 (데이터 불러오기)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.4 Import 메뉴 (데이터 불러오기)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#841-matrix-csv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4.1 Matrix (매트릭스 CSV 불러오기)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#842-import-mask" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4.2 Import Mask (목표 마스크 불러오기)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#843-import-s2p-s2p" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4.3 Import s2p (외부 s2p 오버레이 비교)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="chapter-8">Chapter 8. 메뉴 및 파일 입출력<a class="headerlink" href="#chapter-8" title="Permanent link">&para;</a></h1>
+<p>CMW2026의 상단 메뉴바는 프로그램의 모든 핵심 기능을 제어하는 중추 신경계입니다. 이 장에서는 <strong>File, Export, Import</strong> 총 3개의 메뉴가 어떤 역할을 하는지 상세히 설명하고, 프로젝트 파일의 내부 구조와 시뮬레이터 연동 방법을 다룹니다.</p>
+<h2 id="81">8.1 메뉴바 전체 구성 개요<a class="headerlink" href="#81" title="Permanent link">&para;</a></h2>
+<p>프로그램 최상단에 위치한 메뉴바는 프로젝트 관리부터 외부 데이터 연동까지 모든 기능을 제공합니다.</p>
+<div>
+  <img src="../images/ch08/fig-8-01.png" alt="CMW2026 메뉴바 전체">
+  <br>
+  <em>그림 8-1: CMW2026 메뉴바 전체 구성</em>
+</div>
+
+<hr />
+<h2 id="82-file">8.2 File 메뉴 (프로젝트 관리)<a class="headerlink" href="#82-file" title="Permanent link">&para;</a></h2>
+<p>File 메뉴는 현재 작업 중인 프로젝트의 생명주기를 관리합니다.</p>
+<h3 id="821-save-file">8.2.1 Save File (저장)<a class="headerlink" href="#821-save-file" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>단축키</strong>: <code>Ctrl + S</code></li>
+<li><strong>동작</strong>: 현재 작업 상태를 CSV 파일로 저장합니다. 이미 저장된 경로가 있다면 덮어쓰고, 처음 저장하는 경우 파일 탐색기가 열립니다.</li>
+</ul>
+<div>
+  <img src="../images/ch08/fig-8-02.png" alt="Save File 저장 창">
+  <br>
+  <em>그림 8-2: Save File 저장 창</em>
+</div>
+
+<h3 id="822-save-as-file">8.2.2 Save As File (다른 이름으로 저장)<a class="headerlink" href="#822-save-as-file" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>단축키</strong>: <code>Ctrl + Shift + S</code></li>
+<li><strong>동작</strong>: 현재 상태를 새로운 파일명으로 저장합니다. 기존 파일은 그대로 유지됩니다.</li>
+</ul>
+<div>
+  <img src="../images/ch08/fig-8-03.png" alt="Save As File 저장 창">
+  <br>
+  <em>그림 8-3: Save As File 저장 창</em>
+</div>
+
+<h3 id="823-open-file">8.2.3 Open File (열기)<a class="headerlink" href="#823-open-file" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>단축키</strong>: <code>Ctrl + O</code></li>
+<li><strong>동작</strong>: 저장된 프로젝트 CSV 파일을 불러옵니다. 불러오기가 완료되면 자동으로 <strong>Filter 모드</strong>로 전환되며 파형이 갱신됩니다.</li>
+</ul>
+<div>
+  <img src="../images/ch08/fig-8-04.png" alt="Open File 열기 창">
+  <br>
+  <em>그림 8-4: Open File 파일 열기 창</em>
+</div>
+
+<h3 id="824-clear-all">8.2.4 Clear All (전체 초기화)<a class="headerlink" href="#824-clear-all" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>동작</strong>: 모든 매트릭스, Goals, 마커, TZ 데이터를 초기화하고 프로그램 실행 직후 상태로 되돌립니다.</li>
+<li><strong>주의</strong>: 실행 전 확인 대화상자가 표시되며, 이 작업은 <strong>되돌릴 수 없습니다.</strong></li>
+</ul>
+<div>
+  <img src="../images/ch08/fig-8-05.png" alt="Clear All 확인 대화상자">
+  <br>
+  <em>그림 8-5: Clear All 확인 대화상자</em>
+</div>
+
+<h3 id="825-exit">8.2.5 Exit (종료)<a class="headerlink" href="#825-exit" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>동작</strong>: 프로그램을 안전하게 종료합니다.</li>
+</ul>
+<div>
+  <img src="../images/ch08/fig-8-06.png" alt="Exit 프로그램 종료">
+  <br>
+  <em>그림 8-6: Exit 버튼 클릭 (또는 창 닫기)</em>
+</div>
+
+<div class="admonition note">
+<p class="admonition-title">프로젝트 CSV 파일의 내부 구조</p>
+<p>프로젝트 파일은 메모장으로 열어볼 수 있으며, 다음과 같이 섹션(<code>[ ]</code>) 별로 구조화되어 있습니다.</p>
+<p><div>
+  <img src="../images/ch08/fig-8-07.png" alt="CSV 내부 구조">
+  <br>
+  <em>그림 8-7: 프로젝트 CSV 파일 내부 구조</em>
+</div></p>
+<ul>
+<li><code>[Parameters]</code>: 기본 파라미터 및 화면 설정</li>
+<li><code>[Target Matrix]</code>: 커플링 매트릭스 값</li>
+<li><code>[Optimization Goals]</code>: 최적화 목표 데이터</li>
+<li><code>[Synthesize TZ]</code>: 전송 영점 주파수 목록</li>
+<li><code>[SParam Markers]</code>, <code>[GD Markers]</code>: 마커 데이터</li>
+</ul>
+</div>
+<hr />
+<h2 id="83-export">8.3 Export 메뉴 (데이터 내보내기)<a class="headerlink" href="#83-export" title="Permanent link">&para;</a></h2>
+<p>설계된 데이터를 외부 파일로 추출하여 보고서 작성이나 다른 시뮬레이터 연동에 사용합니다.</p>
+<div>
+  <img src="../images/ch08/fig-8-08.png" alt="Export 메뉴 드롭다운">
+  <br>
+  <em>그림 8-8: Export 메뉴 드롭다운</em>
+</div>
+
+<h3 id="831-graph-image">8.3.1 Graph Image (그래프 이미지 저장)<a class="headerlink" href="#831-graph-image" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>단축키</strong>: <code>Ctrl + Shift + G</code></li>
+<li><strong>동작</strong>: 현재 화면의 그래프와 마커 테이블 등을 하나의 이미지 파일(.png, .jpg, .bmp)로 저장합니다. 함께 저장되는 <code>.txt</code> 파일에는 설계 파라미터 정보가 기록됩니다.</li>
+</ul>
+<div>
+  <img src="../images/ch08/fig-8-09.png" alt="Graph Image 저장 창">
+  <br>
+  <em>그림 8-9: Graph Image 저장 창</em>
+</div>
+
+<h3 id="832-matrix-csv">8.3.2 Matrix (매트릭스 CSV 내보내기)<a class="headerlink" href="#832-matrix-csv" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>동작</strong>: 커플링 매트릭스 데이터만 별도의 CSV 파일로 추출합니다. Lock 상태도 함께 저장됩니다.</li>
+</ul>
+<div>
+  <img src="../images/ch08/fig-8-10.png" alt="Matrix 저장 창">
+  <br>
+  <em>그림 8-10: Matrix CSV 저장 창</em>
+</div>
+
+<h3 id="833-export-goals">8.3.3 Export Goals (목표 마스크 내보내기)<a class="headerlink" href="#833-export-goals" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>동작</strong>: Optimization Goals 테이블의 데이터를 CSV 파일로 저장합니다. 다른 프로젝트에 목표 마스크를 이식할 때 유용합니다.</li>
+</ul>
+<div>
+  <img src="../images/ch08/fig-8-11.png" alt="Export Goals 저장 창">
+  <br>
+  <em>그림 8-11: Export Goals 저장 창</em>
+</div>
+
+<h3 id="834-k-inverter-k-">8.3.4 K-Inverter (K-인버터 변환)<a class="headerlink" href="#834-k-inverter-k-" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>동작</strong>: 커플링 매트릭스(CBW)를 회로 설계에 직접 사용할 수 있는 임피던스 인버터(K) 값으로 변환하여 CSV로 저장합니다.</li>
+</ul>
+<div>
+  <img src="../images/ch08/fig-8-12.png" alt="K-Inverter 저장 창">
+  <br>
+  <em>그림 8-12: K-Inverter CSV 저장 창</em>
+</div>
+
+<h3 id="835-s2p-file-s-">8.3.5 s2p File (S-파라미터 내보내기)<a class="headerlink" href="#835-s2p-file-s-" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>동작</strong>: 현재 매트릭스 또는 Synthesize 파형을 Touchstone(<code>.s2p</code>) 포맷으로 저장합니다. CST, HFSS, ADS 등 상용 툴에서 바로 불러올 수 있습니다.</li>
+</ul>
+<div>
+  <img src="../images/ch08/fig-8-13.png" alt="s2p Export 창">
+  <br>
+  <em>그림 8-13: s2p Export 창 (CBW/Synthesize 선택 및 파일 저장)</em>
+</div>
+
+<h3 id="836-circuit-schematic">8.3.6 Circuit Schematic (회로 개략도)<a class="headerlink" href="#836-circuit-schematic" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>동작</strong>: 매트릭스 기반의 필터 회로 토폴로지를 이미지 파일로 저장합니다.</li>
+</ul>
+<div>
+  <img src="../images/ch08/fig-8-14.png" alt="Circuit Schematic 창">
+  <br>
+  <em>그림 8-14: Circuit Schematic 창</em>
+</div>
+
+<hr />
+<h2 id="84-import">8.4 Import 메뉴 (데이터 불러오기)<a class="headerlink" href="#84-import" title="Permanent link">&para;</a></h2>
+<p>외부에서 생성된 데이터를 CMW2026으로 가져옵니다.</p>
+<div>
+  <img src="../images/ch08/fig-8-15.png" alt="Import 메뉴 드롭다운">
+  <br>
+  <em>그림 8-15: Import 메뉴 드롭다운</em>
+</div>
+
+<h3 id="841-matrix-csv">8.4.1 Matrix (매트릭스 CSV 불러오기)<a class="headerlink" href="#841-matrix-csv" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>동작</strong>: Export → Matrix로 저장했던 매트릭스 CSV를 불러와 현재 프로젝트의 매트릭스만 교체합니다. (Goals, 마커 등은 유지됨)</li>
+</ul>
+<div>
+  <img src="../images/ch08/fig-8-16.png" alt="Matrix Import 창">
+  <br>
+  <em>그림 8-16: Matrix CSV Import 파일 열기 창</em>
+</div>
+
+<h3 id="842-import-mask">8.4.2 Import Mask (목표 마스크 불러오기)<a class="headerlink" href="#842-import-mask" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>동작</strong>: 고객사에서 받은 스펙 마스크(CSV)를 불러와 Optimization Goals 테이블에 자동으로 채웁니다.</li>
+</ul>
+<div>
+  <img src="../images/ch08/fig-8-17.png" alt="Import Mask 창">
+  <br>
+  <em>그림 8-17: Import Mask 파일 열기 창</em>
+</div>
+
+<h3 id="843-import-s2p-s2p">8.4.3 Import s2p (외부 s2p 오버레이 비교)<a class="headerlink" href="#843-import-s2p-s2p" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>동작</strong>: 외부 s2p 파일을 현재 그래프에 <strong>오버레이(점선)</strong> 로 표시하여 Compare 목적으로 사용합니다.</li>
+<li><strong>특징</strong>:</li>
+<li>Import 후 <strong>Compare</strong> 체크박스가 그래프 상단에 표시됩니다.</li>
+<li>Compare S11/S21/S22가 점선으로 오버레이됩니다.</li>
+<li>Compare 전용 마커(CM1, CM2, ...)를 그래프 우클릭 → <strong>Add MK</strong> → <strong>Compare S11/S21/S22</strong>로 추가할 수 있습니다.</li>
+<li>기존 마커(M1, M2, ...)와 완전히 분리되어 관리됩니다.</li>
+<li><strong>해제</strong>: 그래프 우클릭 → <strong>Clear Compare Markers</strong>로 Compare 마커만 삭제할 수 있습니다. Compare 파형 자체는 다시 Import s2p를 실행하면 갱신됩니다.</li>
+</ul>
+<div>
+  <img src="../images/ch08/fig-8-18.png" alt="Import s2p 오버레이 비교">
+  <br>
+  <em>그림 8-18: Import s2p 오버레이 비교 화면</em>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  맨위로
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.sidebar", "navigation.top", "navigation.indexes", "search.suggest", "search.highlight", "content.code.copy", "content.tabs.link"], "search": "assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.c21346df.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -2,6 +2,13 @@
 
 **Coupling Matrix Wizard 2026 Ver 2.0**에 오신 것을 환영합니다.
 
+<!-- ★ 오프라인 매뉴얼 다운로드 버튼 (클릭 시 ZIP 다운로드) -->
+<a href="assets/CMW2026_Manual_Offline.zip" class="pdf-download-btn" download>
+  📦 전체 매뉴얼 다운로드 (Offline ZIP)
+</a>
+
+
+
 이 매뉴얼은 마이크로파 필터 설계 도구 **CMW2026**의 완전한 사용 안내서입니다.
 
 ---

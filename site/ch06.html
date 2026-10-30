@@ -1,0 +1,1872 @@
+
+<!doctype html>
+<html lang="ko" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Coupling Matrix Wizard 2026 Ver 2.0">
+      
+      
+        <meta name="author" content="Partron RF Solution Team">
+      
+      
+      
+        <link rel="prev" href="ch05.html">
+      
+      
+        <link rel="next" href="ch07.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+    
+    
+      
+        <title>Ch 6. 마커 설정 - CMW2026 사용자 매뉴얼</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+        <script src="https://unpkg.com/iframe-worker/shim"></script>
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#chapter-6" class="md-skip">
+          콘텐츠로 이동
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="상단/헤더">
+    <a href="index.html" title="CMW2026 사용자 매뉴얼" class="md-header__button md-logo" aria-label="CMW2026 사용자 매뉴얼" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CMW2026 사용자 매뉴얼
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Ch 6. 마커 설정
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="light-blue"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="light-blue"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="검색">
+        
+        <button type="reset" class="md-search__icon md-icon" title="지우기" aria-label="지우기" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            검색 초기화
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="네비게이션" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="CMW2026 사용자 매뉴얼" class="md-nav__button md-logo" aria-label="CMW2026 사용자 매뉴얼" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    CMW2026 사용자 매뉴얼
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    홈
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ch01.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ch 1. 개요
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ch02.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ch 2. 설치 및 라이선스
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ch03.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ch 3. 화면 구성
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ch04.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ch 4. Synthesize 모드
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ch05.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ch 5. Filter(CBW) 모드
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ch 6. 마커 설정
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="ch06.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ch 6. 마커 설정
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#61" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 마커의 역할과 종류
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.1 마커의 역할과 종류">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#611" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1.1 마커가 필요한 이유
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#612" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1.2 마커의 두 가지 종류
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#613" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1.3 마커가 표시될 수 있는 시리즈
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#62" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 마커 추가
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.2 마커 추가">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#621-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2.1 방법 ①: 그래프 클릭으로 마커 추가
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#622-2-add-mk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2.2 방법 ②: 우클릭 → Add MK
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#623" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2.3 다중 주파수 및 범위 입력
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#624" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2.4 마커 스타일 선택
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#625-vs-add-mk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2.5 그래프 클릭 vs Add MK 비교
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#63" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 마커 라벨 표시 규칙
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.3 마커 라벨 표시 규칙">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#631" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3.1 시리즈별 라벨 위치
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#632-smartlabelstyle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3.2 SmartLabelStyle 자동 회피
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#633" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3.3 마커 크기와 테두리
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#64-marker-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 Marker Table (마커 리스트)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.4 Marker Table (마커 리스트)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#641" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4.1 테이블 구조
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#642" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4.2 주파수 편집 (마커 이동)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#643" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4.3 값 편집
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#644" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4.4 다중 선택 및 일괄 삭제
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#65" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.5 마커 삭제 및 초기화
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.5 마커 삭제 및 초기화">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#651" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.5.1 개별 마커 삭제
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#652" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.5.2 수동 마커 전체 삭제
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#653" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.5.3 자동 마커 삭제 플래그
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#66" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.6 마커 편집 시 주의사항
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.6 마커 편집 시 주의사항">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#661-vs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.6.1 편집 중 vs 편집 외
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#662" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.6.2 편집 확정
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#663" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.6.3 마커 재색인
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ch07.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ch 7. Temp Simulation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ch08.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ch 8. 메뉴 및 파일 입출력
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ch09.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ch 9. 용어 정리
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ch10.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ch 10. Design Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="appendix.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    부록 (FAQ)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#61" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 마커의 역할과 종류
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.1 마커의 역할과 종류">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#611" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1.1 마커가 필요한 이유
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#612" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1.2 마커의 두 가지 종류
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#613" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1.3 마커가 표시될 수 있는 시리즈
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#62" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 마커 추가
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.2 마커 추가">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#621-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2.1 방법 ①: 그래프 클릭으로 마커 추가
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#622-2-add-mk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2.2 방법 ②: 우클릭 → Add MK
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#623" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2.3 다중 주파수 및 범위 입력
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#624" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2.4 마커 스타일 선택
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#625-vs-add-mk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2.5 그래프 클릭 vs Add MK 비교
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#63" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 마커 라벨 표시 규칙
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.3 마커 라벨 표시 규칙">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#631" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3.1 시리즈별 라벨 위치
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#632-smartlabelstyle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3.2 SmartLabelStyle 자동 회피
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#633" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3.3 마커 크기와 테두리
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#64-marker-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 Marker Table (마커 리스트)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.4 Marker Table (마커 리스트)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#641" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4.1 테이블 구조
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#642" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4.2 주파수 편집 (마커 이동)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#643" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4.3 값 편집
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#644" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4.4 다중 선택 및 일괄 삭제
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#65" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.5 마커 삭제 및 초기화
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.5 마커 삭제 및 초기화">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#651" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.5.1 개별 마커 삭제
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#652" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.5.2 수동 마커 전체 삭제
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#653" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.5.3 자동 마커 삭제 플래그
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#66" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.6 마커 편집 시 주의사항
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.6 마커 편집 시 주의사항">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#661-vs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.6.1 편집 중 vs 편집 외
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#662" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.6.2 편집 확정
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#663" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.6.3 마커 재색인
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="chapter-6">Chapter 6. 마커 설정<a class="headerlink" href="#chapter-6" title="Permanent link">&para;</a></h1>
+<p>마커(Marker)는 그래프 상의 특정 주파수 지점에서 <strong>정확한 S-파라미터 값(dB) 또는 Group Delay 값(ns)</strong> 을 읽기 위한 도구입니다. 이 장에서는 마커의 추가/편집/삭제 방법과 라벨 표시 규칙, Marker Table 활용법을 단계적으로 설명합니다.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>마커 기능은 <strong>Filter(CBW) 모드</strong>와 <strong>Synthesize 모드</strong> 모두에서 사용할 수 있습니다. 두 모드의 마커는 독립적으로 관리되며, 각 모드로 전환하면 해당 모드의 마커만 표시됩니다.</p>
+</div>
+<h2 id="61">6.1 마커의 역할과 종류<a class="headerlink" href="#61" title="Permanent link">&para;</a></h2>
+<h3 id="611">6.1.1 마커가 필요한 이유<a class="headerlink" href="#611" title="Permanent link">&para;</a></h3>
+<p>S-파라미터 그래프는 수백~수천 개의 데이터 포인트로 구성됩니다. 특정 지점의 정확한 값을 읽으려면 다음 방법이 필요합니다.</p>
+<ul>
+<li><strong>정확한 값 읽기</strong>: 마우스 커서로는 정확한 dB 값을 읽기 어려움 → 마커로 정밀 측정</li>
+<li><strong>비교 분석</strong>: 여러 지점의 값을 동시에 비교 (예: 통과대역 리플의 최대/최소)</li>
+<li><strong>TZ 깊이 확인</strong>: Notch의 정확한 깊이(dB) 확인</li>
+<li><strong>Goals 검증</strong>: Optimization Goals의 Target 대비 실제 Measure 값 확인</li>
+</ul>
+<h3 id="612">6.1.2 마커의 두 가지 종류<a class="headerlink" href="#612" title="Permanent link">&para;</a></h3>
+<p>프로그램은 마커를 <strong>자동 마커</strong>와 <strong>수동 마커</strong>로 구분하여 관리합니다.</p>
+<table>
+<thead>
+<tr>
+<th>종류</th>
+<th>생성 방법</th>
+<th>색상</th>
+<th>번호</th>
+<th>삭제 방식</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>자동 마커</strong></td>
+<td>Optimization Goals 기반 자동 생성</td>
+<td><strong>흰색</strong> 원</td>
+<td>M1, M2, ...</td>
+<td>Goals 변경 시 자동 갱신</td>
+</tr>
+<tr>
+<td><strong>수동 마커</strong></td>
+<td>사용자 클릭 또는 Add MK</td>
+<td><strong>연노랑</strong> 원</td>
+<td>M1, M2, ... (자동 마커 이후)</td>
+<td>개별 삭제 가능</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>현재 버전에서는 <strong>자동 마커 생성이 비활성화</strong>되어 있습니다 (<code>_disableAutoMarkers = True</code>). 따라서 대부분의 마커는 사용자가 직접 추가하는 <strong>수동 마커</strong>입니다. 자동 마커 기능은 향후 버전에서 다시 활성화될 수 있습니다.</p>
+</div>
+<h3 id="613">6.1.3 마커가 표시될 수 있는 시리즈<a class="headerlink" href="#613" title="Permanent link">&para;</a></h3>
+<p>마커는 다음 시리즈에 추가할 수 있습니다.</p>
+<table>
+<thead>
+<tr>
+<th>시리즈</th>
+<th>모드</th>
+<th>측정값 단위</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tune S11 / S21 / S22</td>
+<td>Filter(CBW)</td>
+<td>dB</td>
+</tr>
+<tr>
+<td>Synth S11 / S21 / S22</td>
+<td>Synthesize</td>
+<td>dB</td>
+</tr>
+<tr>
+<td>GD Tune S11 / S21 / S22</td>
+<td>Filter(CBW)</td>
+<td>ns</td>
+</tr>
+<tr>
+<td>GD Synth S11 / S21 / S22</td>
+<td>Synthesize</td>
+<td>ns</td>
+</tr>
+<tr>
+<td>Temp S11 / S21 / S22</td>
+<td>Temp Simulation ON</td>
+<td>dB</td>
+</tr>
+<tr>
+<td>GD Temp S11 / S21 / S22</td>
+<td>Temp Simulation ON</td>
+<td>ns</td>
+</tr>
+<tr>
+<td>Compare S11 / S21 / S22</td>
+<td>Import s2p 후</td>
+<td>dB</td>
+</tr>
+</tbody>
+</table>
+<h2 id="62">6.2 마커 추가<a class="headerlink" href="#62" title="Permanent link">&para;</a></h2>
+<p>마커를 추가하는 방법은 <strong>2가지</strong>입니다.</p>
+<table>
+<thead>
+<tr>
+<th>방법</th>
+<th>특징</th>
+<th>사용 시나리오</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>① 그래프 클릭</strong></td>
+<td>가장 빠르고 직관적. 클릭 지점 근처 데이터 포인트에 자동 스냅</td>
+<td>파형을 보며 마커 추가</td>
+</tr>
+<tr>
+<td><strong>② 우클릭 → Add MK</strong></td>
+<td>정확한 주파수 입력, 다중/범위 입력, 시리즈/스타일 선택</td>
+<td>특정 주파수에 정확히 마커 추가</td>
+</tr>
+</tbody>
+</table>
+<h3 id="621-1">6.2.1 방법 ①: 그래프 클릭으로 마커 추가<a class="headerlink" href="#621-1" title="Permanent link">&para;</a></h3>
+<p><strong>그래프 상의 원하는 지점을 마우스로 클릭하면 마커가 추가됩니다.</strong> 가장 빠르고 직관적인 방법입니다.</p>
+<p><strong>실습 절차</strong>:</p>
+<ol>
+<li>그래프 상의 원하는 지점을 <strong>마우스 좌클릭</strong>합니다.</li>
+<li>클릭 지점에서 <strong>가장 가까운 데이터 포인트</strong>(허용 오차 20px)를 자동으로 찾습니다.</li>
+<li>해당 포인트에 마커가 추가되고, 라벨(M번호)이 자동 부여됩니다.</li>
+<li>마커는 <strong>연노랑 원</strong>으로 표시되며, Marker Table에 즉시 등록됩니다.</li>
+</ol>
+<p><a href="../images/ch06/fig-6-01.png" target="_blank">
+  <img src="../images/ch06/fig-6-01.png" alt="그래프 클릭으로 마커 추가" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+</a></p>
+<p><em>그림 6-1: 그래프 클릭으로 마커 추가</em></p>
+<p><strong>모드별 동작</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>모드</th>
+<th>클릭 시 마커가 추가되는 시리즈</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Filter(CBW) 모드</strong></td>
+<td>Tune S21 (S21 체크박스 ON 필요)<br>+ GD 체크 시: GD11/GD21/GD22 중 클릭 지점 근처</td>
+</tr>
+<tr>
+<td><strong>Synthesize 모드</strong></td>
+<td>Synth S11/S21/S22 중 클릭 지점에서 가장 가까운 시리즈</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">TIP</p>
+<p><strong>S11 또는 S22에 정확히 마커를 추가</strong>하고 싶다면 <strong>Add MK</strong> 방법(6.2.2)을 사용하세요. 그래프 클릭은 가장 가까운 시리즈에 자동으로 마커를 추가하므로, 특정 시리즈를 지정하기 어려울 수 있습니다.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">WARNING</p>
+<p><strong>다음 상황에서는 그래프 클릭으로 마커가 추가되지 않습니다.</strong></p>
+<ul>
+<li><strong>TZ 드래그 중</strong>: 드래그가 우선 처리됩니다.</li>
+<li><strong>줌 드래그 중</strong>: 영역 선택이 우선 처리됩니다.</li>
+<li><strong>Pick Mask 모드</strong>: 마스크 지정이 우선 처리됩니다.</li>
+<li><strong>우클릭</strong>: 좌클릭만 마커를 추가합니다.</li>
+<li><strong>클릭 지점 근처에 데이터 포인트가 없음</strong>: 허용 오차(20px)를 벗어나면 무시됩니다.</li>
+<li><strong>해당 시리즈가 비어있음</strong>: S21 체크박스가 꺼져 있거나 데이터가 없으면 추가되지 않습니다.</li>
+</ul>
+</div>
+<p><strong>연속 클릭으로 여러 마커 추가</strong>:</p>
+<p>그래프를 클릭 → 마커 추가 → 다시 클릭 → 또 추가... 를 반복하면 <strong>여러 개의 마커를 빠르게 추가</strong>할 수 있습니다. 마커 번호는 자동으로 M1, M2, M3, ... 로 증가합니다.</p>
+<p><a href="../images/ch06/fig-6-01a.png" target="_blank">
+  <img src="../images/ch06/fig-6-01a.png" alt="연속 클릭으로 여러 마커 추가" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+</a></p>
+<p><em>그림 6-1a: 그래프 연속 클릭으로 여러 마커 추가</em></p>
+<h3 id="622-2-add-mk">6.2.2 방법 ②: 우클릭 → Add MK<a class="headerlink" href="#622-2-add-mk" title="Permanent link">&para;</a></h3>
+<p>정확한 주파수에 마커를 추가하거나, 특정 시리즈(S11/S22/GD)에 마커를 추가할 때 사용합니다.</p>
+<p><strong>실습 절차</strong>:</p>
+<ol>
+<li>그래프 빈 공간에서 <strong>우클릭</strong>합니다.</li>
+<li><strong>Add MK (S11/S21/S22)</strong> 메뉴를 클릭합니다.</li>
+</ol>
+<p><a href="../images/ch06/fig-6-02.png" target="_blank">
+  <img src="../images/ch06/fig-6-02.png" alt="그래프 우클릭 → Add MK" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+</a></p>
+<p><em>그림 6-2: 그래프 우클릭 → Add MK 메뉴</em></p>
+<ol>
+<li><strong>Add MK 팝업</strong>이 열립니다. 다음을 선택합니다:</li>
+<li><strong>S-Param</strong>: S11, S21, S22, GD11, GD21, GD22, Compare S11/S21/S22 중 선택</li>
+<li><strong>Marker Style</strong>: ● Circle, ▲ Triangle, ◆ Diamond, ★ Star, ■ Square, ✚ Cross 중 선택</li>
+</ol>
+<p><a href="../images/ch06/fig-6-03.png" target="_blank">
+  <img src="../images/ch06/fig-6-03.png" alt="Add MK 팝업" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+</a></p>
+<p><em>그림 6-3: Add MK 팝업 (S-Param + Marker Style)</em></p>
+<ol>
+<li>주파수를 입력하고 <code>Enter</code>를 누릅니다 (예: <code>5000</code>).</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">TIP</p>
+<p>Add MK 팝업은 <strong>모달리스(Modaless)</strong> 로 동작합니다. <code>Enter</code>로 마커를 추가한 뒤에도 창이 닫히지 않아 <strong>연속 입력</strong>이 가능합니다. 팝업 우측 상단의 <code>✕</code> 버튼 또는 <code>ESC</code> 키로 닫을 수 있습니다.</p>
+</div>
+<h3 id="623">6.2.3 다중 주파수 및 범위 입력<a class="headerlink" href="#623" title="Permanent link">&para;</a></h3>
+<p>Add MK 팝업의 주파수 입력란에 <strong>여러 주파수를 한 번에 입력</strong>할 수 있습니다.</p>
+<p><strong>다중 주파수 입력 (콤마 구분)</strong></p>
+<p><code>4950, 5000, 5050</code> → 3개의 마커가 동시에 추가됩니다.</p>
+<p><strong>범위 입력 (하이픈 구분)</strong></p>
+<p><code>4950-5050</code> → 4950부터 5050까지 <strong>0.5MHz 간격</strong>으로 자동 추가됩니다 (약 201개).</p>
+<p><strong>혼합 입력</strong></p>
+<p><code>4950, 5000-5050, 6000</code> → 4950 (1개) + 5000~5050 (101개) + 6000 (1개) = 총 103개</p>
+<p><a href="../images/ch06/fig-6-04.png" target="_blank">
+  <img src="../images/ch06/fig-6-04.png" alt="다중 주파수 입력 예시" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+</a></p>
+<p><em>그림 6-4: 다중 주파수 및 범위 입력 예시</em></p>
+<div class="admonition warning">
+<p class="admonition-title">WARNING</p>
+<p><strong>범위 입력은 신중히 사용하세요.</strong> <code>4900-5100</code>처럼 넓은 범위를 입력하면 수백 개의 마커가 생성되어 그래프가 매우 복잡해지고 성능이 저하될 수 있습니다. 필요한 경우 <strong>좁은 범위</strong>로 입력하세요.</p>
+</div>
+<h3 id="624">6.2.4 마커 스타일 선택<a class="headerlink" href="#624" title="Permanent link">&para;</a></h3>
+<p>Add MK 팝업의 <strong>Marker Style</strong> 콤보박스에서 마커 기호를 선택할 수 있습니다.</p>
+<table>
+<thead>
+<tr>
+<th>스타일</th>
+<th>기호</th>
+<th>용도</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Circle</td>
+<td>●</td>
+<td>기본값</td>
+</tr>
+<tr>
+<td>Triangle</td>
+<td>▲</td>
+<td>TZ 마커와 유사 (주의)</td>
+</tr>
+<tr>
+<td>Diamond</td>
+<td>◆</td>
+<td>특별한 지점 강조</td>
+</tr>
+<tr>
+<td>Star</td>
+<td>★</td>
+<td>중요 마커 강조</td>
+</tr>
+<tr>
+<td>Square</td>
+<td>■</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Cross</td>
+<td>✚</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">TIP</p>
+<p><strong>Triangle(▲)</strong> 은 TZ(Transmission Zero) 마커와 혼동될 수 있습니다. TZ 마커는 Synthesize 모드에서 자동 생성되는 삼각형이므로, 일반 마커에는 <strong>Circle(●)</strong> 또는 <strong>Diamond(◆)</strong> 를 권장합니다.</p>
+</div>
+<h3 id="625-vs-add-mk">6.2.5 그래프 클릭 vs Add MK 비교<a class="headerlink" href="#625-vs-add-mk" title="Permanent link">&para;</a></h3>
+<p>두 방법의 차이를 정리하면 다음과 같습니다.</p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>그래프 클릭</th>
+<th>Add MK</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>속도</strong></td>
+<td>매우 빠름 (1클릭)</td>
+<td>팝업 입력 필요</td>
+</tr>
+<tr>
+<td><strong>정확도</strong></td>
+<td>근처 데이터 포인트에 스냅 (20px)</td>
+<td>정확한 주파수 입력 가능</td>
+</tr>
+<tr>
+<td><strong>시리즈 선택</strong></td>
+<td>자동 (가장 가까운 시리즈)</td>
+<td>수동 (S11/S21/S22/GD11/GD21/GD22/Compare)</td>
+</tr>
+<tr>
+<td><strong>다중 입력</strong></td>
+<td>불가 (1개씩)</td>
+<td>콤마/범위로 다중 입력 가능</td>
+</tr>
+<tr>
+<td><strong>스타일 선택</strong></td>
+<td>Circle 고정</td>
+<td>6가지 선택 가능</td>
+</tr>
+<tr>
+<td><strong>연속 입력</strong></td>
+<td>클릭 반복</td>
+<td>팝업 유지 (모달리스)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">TIP</p>
+<p><strong>파형을 보며 빠르게 마커를 찍고 싶을 때</strong>는 그래프 클릭을, <strong>정확한 주파수에 특정 시리즈로 마커를 추가하고 싶을 때</strong>는 Add MK를 사용하세요.</p>
+</div>
+<h2 id="63">6.3 마커 라벨 표시 규칙<a class="headerlink" href="#63" title="Permanent link">&para;</a></h2>
+<p>프로그램은 그래프의 가독성을 극대화하기 위해 <strong>마커 라벨 위치를 자동으로 결정</strong>합니다.</p>
+<h3 id="631">6.3.1 시리즈별 라벨 위치<a class="headerlink" href="#631" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>시리즈</th>
+<th>라벨 위치</th>
+<th>이유</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>S21 계열</strong> (Tune S21, Synth S21, Temp S21, GD21)</td>
+<td>마커 <strong>위</strong></td>
+<td>S21 파형은 보통 -60~0dB 영역이라 위쪽 여유 공간이 많음</td>
+</tr>
+<tr>
+<td><strong>S11/S22 계열</strong> (Tune S11, S22, Synth S11, S22, Temp S11, S22, GD11, GD22)</td>
+<td>마커 <strong>아래</strong></td>
+<td>S11/S22는 보통 -20dB 이하로 낮아, 아래쪽 여유 공간이 많음</td>
+</tr>
+</tbody>
+</table>
+<p><a href="../images/ch06/fig-6-05.png" target="_blank">
+  <img src="../images/ch06/fig-6-05.png" alt="다중 마커 추가된 그래프" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+</a></p>
+<p><em>그림 6-5: 다중 마커가 추가된 그래프 (S21=위, S11=아래)</em></p>
+<h3 id="632-smartlabelstyle">6.3.2 SmartLabelStyle 자동 회피<a class="headerlink" href="#632-smartlabelstyle" title="Permanent link">&para;</a></h3>
+<p>라벨이 서로 겹치지 않도록 <strong>SmartLabelStyle</strong>이 자동으로 위치를 조정합니다.</p>
+<ul>
+<li><strong>AllowOutsidePlotArea</strong>: 그래프 영역 밖으로도 라벨 표시 가능</li>
+<li><strong>IsMarkerOverlappingAllowed</strong>: 겹침 허용 (자동 회피 시도)</li>
+<li><strong>CalloutStyle</strong>: None (라벨과 마커 사이 연결선 없음)</li>
+<li><strong>MovingDirection</strong>: S21=Top, S11/S22=Bottom</li>
+</ul>
+<h3 id="633">6.3.3 마커 크기와 테두리<a class="headerlink" href="#633" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>MarkerSize</strong>: 6 (기본값 4에서 50% 확대)</li>
+<li><strong>MarkerBorderColor</strong>: Black</li>
+<li><strong>MarkerBorderWidth</strong>: 1 (얇게)</li>
+<li><strong>MarkerColor</strong>: 수동=LightYellow, 자동=White</li>
+</ul>
+<h2 id="64-marker-table">6.4 Marker Table (마커 리스트)<a class="headerlink" href="#64-marker-table" title="Permanent link">&para;</a></h2>
+<h3 id="641">6.4.1 테이블 구조<a class="headerlink" href="#641" title="Permanent link">&para;</a></h3>
+<p>그래프 아래의 <strong>Marker Table</strong>은 모든 마커를 리스트로 보여줍니다.</p>
+<table>
+<thead>
+<tr>
+<th>열</th>
+<th>설명</th>
+<th>편집 가능</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>No</strong></td>
+<td>마커 번호 (M1, M2, ...)</td>
+<td>❌</td>
+</tr>
+<tr>
+<td><strong>S</strong></td>
+<td>S-파라미터 타입 (S11, S21, S22, GD11, GD21, GD22, C-S11, C-S21, C-S22)</td>
+<td>❌</td>
+</tr>
+<tr>
+<td><strong>[MHz]</strong></td>
+<td>주파수</td>
+<td>✅ (편집 가능)</td>
+</tr>
+<tr>
+<td><strong>[dB]</strong></td>
+<td>측정값 (S-파라미터=dB, GD=ns)</td>
+<td>✅ (편집 가능)</td>
+</tr>
+</tbody>
+</table>
+<p><a href="../images/ch06/fig-6-06.png" target="_blank">
+  <img src="../images/ch06/fig-6-06.png" alt="Marker Table" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+</a></p>
+<p><em>그림 6-6: Marker Table (자동 + 수동 마커)</em></p>
+<h3 id="642">6.4.2 주파수 편집 (마커 이동)<a class="headerlink" href="#642" title="Permanent link">&para;</a></h3>
+<p>Marker Table의 <strong>[MHz]</strong> 셀을 직접 편집하여 마커를 <strong>정확한 주파수로 이동</strong>할 수 있습니다.</p>
+<p><strong>실습 절차</strong>:</p>
+<ol>
+<li>마커 행의 [MHz] 셀을 클릭합니다.</li>
+<li>새 주파수를 입력하고 <code>Enter</code>를 누릅니다.</li>
+<li>마커가 새 주파수로 이동하며, 그래프와 라벨도 갱신됩니다.</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>주파수 편집 시 가장 가까운 데이터 포인트로 <strong>자동 스냅</strong>됩니다. 데이터 포인트 간격(예: 0.5MHz)보다 세밀한 위치로는 이동할 수 없습니다.</p>
+</div>
+<h3 id="643">6.4.3 값 편집<a class="headerlink" href="#643" title="Permanent link">&para;</a></h3>
+<p>[dB] 셀을 직접 편집할 수도 있습니다. 이는 <strong>마커 값을 수동으로 기록</strong>할 때 유용합니다.</p>
+<h3 id="644">6.4.4 다중 선택 및 일괄 삭제<a class="headerlink" href="#644" title="Permanent link">&para;</a></h3>
+<p>Marker Table은 <strong>다중 선택</strong>을 지원합니다.</p>
+<p><strong>방법 1: Ctrl 키</strong>
+1. 첫 번째 마커를 클릭합니다.
+2. <code>Ctrl</code> 키를 누른 채로 추가 마커를 클릭합니다.</p>
+<p><strong>방법 2: Shift 키</strong>
+1. 첫 번째 마커를 클릭합니다.
+2. <code>Shift</code> 키를 누른 채로 마지막 마커를 클릭합니다.
+3. 두 마커 사이의 모든 마커가 선택됩니다.</p>
+<p><strong>삭제</strong>:
+1. 선택된 마커에서 <code>Delete</code> 키를 누릅니다.
+2. 확인 대화상자가 표시되면 <strong>예</strong>를 클릭합니다.</p>
+<p><a href="../images/ch06/fig-6-07.png" target="_blank">
+  <img src="../images/ch06/fig-6-07.png" alt="마커 다중 선택 후 Delete" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+</a></p>
+<p><em>그림 6-7: 마커 다중 선택 후 Delete</em></p>
+<div class="admonition tip">
+<p class="admonition-title">TIP</p>
+<p><code>Ctrl+A</code>를 누르면 모든 마커가 선택됩니다. 이 상태에서 <code>Delete</code>를 누르면 전체 마커가 한 번에 삭제됩니다.</p>
+</div>
+<h2 id="65">6.5 마커 삭제 및 초기화<a class="headerlink" href="#65" title="Permanent link">&para;</a></h2>
+<h3 id="651">6.5.1 개별 마커 삭제<a class="headerlink" href="#651" title="Permanent link">&para;</a></h3>
+<p><strong>방법 1: Delete 키</strong>
+1. Marker Table에서 삭제할 마커를 선택합니다.
+2. <code>Delete</code> 키를 누릅니다.
+3. 확인 대화상자에서 <strong>예</strong>를 클릭합니다.</p>
+<p><strong>방법 2: 마커 테이블 우클릭 메뉴</strong>
+1. 삭제할 마커를 우클릭합니다.
+2. <strong>Delete Selected Markers (Delete)</strong> 메뉴를 클릭합니다.</p>
+<p><a href="../images/ch06/fig-6-08.png" target="_blank">
+  <img src="../images/ch06/fig-6-08.png" alt="마커 테이블 우클릭 컨텍스트 메뉴" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+</a></p>
+<p><em>그림 6-8: 마커 테이블 우클릭 컨텍스트 메뉴</em></p>
+<h3 id="652">6.5.2 수동 마커 전체 삭제<a class="headerlink" href="#652" title="Permanent link">&para;</a></h3>
+<p>그래프 우클릭 → <strong>Clear All Manual Markers</strong> 메뉴로 <strong>모든 수동 마커를 한 번에 삭제</strong>할 수 있습니다.</p>
+<ol>
+<li>그래프 빈 공간을 우클릭합니다.</li>
+<li><strong>Clear All Manual Markers</strong> 메뉴를 클릭합니다.</li>
+<li>확인 대화상자에서 <strong>예</strong>를 클릭합니다.</li>
+</ol>
+<p><a href="../images/ch06/fig-6-09.png" target="_blank">
+  <img src="../images/ch06/fig-6-09.png" alt="Clear All Manual Markers 결과" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+</a></p>
+<p><em>그림 6-9: Clear All Manual Markers 결과 (모든 수동 마커 제거)</em></p>
+<div class="admonition warning">
+<p class="admonition-title">WARNING</p>
+<p><strong>Clear All Manual Markers</strong>는 수동 마커만 삭제합니다. <strong>자동 마커와 TZ 마커는 유지</strong>됩니다. 만약 자동 마커도 초기화하려면 확인 대화상자에서 추가 옵션을 선택하세요.</p>
+</div>
+<!-- ★ 수정: 자동 마커 삭제 플래그 설명 명확화 -->
+<h3 id="653">6.5.3 자동 마커 삭제 플래그<a class="headerlink" href="#653" title="Permanent link">&para;</a></h3>
+<p>자동 마커가 활성화된 경우, 특정 자동 마커를 삭제하면 <strong>삭제 플래그</strong>가 설정되어 <strong>다시 생성되지 않습니다</strong>.</p>
+<ul>
+<li><code>deletedCBWAutoMarkers</code>: Filter 모드에서 삭제된 자동 마커 목록 (<code>"Type_Freq"</code> 형식, 예: <code>"S21_1950.0"</code>)</li>
+<li><code>deletedSynthAutoMarkers</code>: Synthesize 모드에서 삭제된 자동 마커 목록</li>
+</ul>
+<p>이 플래그는 <strong>Clear All</strong> 시 초기화됩니다. 또한 그래프 우클릭 → <strong>Clear All Manual Markers</strong> 대화상자에서 자동 마커 플래그 초기화 여부를 선택할 수 있습니다.</p>
+<h2 id="66">6.6 마커 편집 시 주의사항<a class="headerlink" href="#66" title="Permanent link">&para;</a></h2>
+<h3 id="661-vs">6.6.1 편집 중 vs 편집 외<a class="headerlink" href="#661-vs" title="Permanent link">&para;</a></h3>
+<p>Marker Table의 [MHz] 셀은 <strong>편집 중</strong>과 <strong>편집 외</strong> 상태에서 동작이 다릅니다.</p>
+<table>
+<thead>
+<tr>
+<th>상태</th>
+<th>동작</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>편집 외</strong> (셀 클릭 후 Enter 전)</td>
+<td>셀 선택만 됨 (값 변경 없음)</td>
+</tr>
+<tr>
+<td><strong>편집 중</strong> (더블클릭 또는 F2)</td>
+<td>키보드 입력, Enter로 확정</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>Marker Table의 주파수 셀은 <strong>마우스 휠로 값이 변경되지 않습니다.</strong> 값 변경은 <strong>직접 입력 후 Enter</strong>로만 가능합니다.</p>
+</div>
+<h3 id="662">6.6.2 편집 확정<a class="headerlink" href="#662" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Enter</strong>: 값 확정</li>
+<li><strong>ESC</strong>: 편집 취소 (원래 값 복복원)</li>
+<li><strong>다른 셀 클릭</strong>: 자동 확정</li>
+</ul>
+<h3 id="663">6.6.3 마커 재색인<a class="headerlink" href="#663" title="Permanent link">&para;</a></h3>
+<p>마커 삭제/추가 시 <strong>자동으로 번호가 재정렬</strong>됩니다 (M1, M2, M3, ...). 예를 들어 M2를 삭제하면 M3가 M2로, M4가 M3로 재번호됩니다.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>Compare 마커(CM1, CM2, ...)는 기존 마커(M1, M2, ...)와 <strong>별도의 번호 체계</strong>를 사용하며, 재색인 시에도 서로 영향을 주지 않습니다.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  맨위로
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.sidebar", "navigation.top", "navigation.indexes", "search.suggest", "search.highlight", "content.code.copy", "content.tabs.link"], "search": "assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.c21346df.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -144,3 +144,30 @@
 .md-sidebar--primary .md-sidebar__scrollwrap::-webkit-scrollbar-thumb:hover {
   background: rgba(123, 167, 217, 0.65);
 }
+
+/* =========================================================
+   오프라인 매뉴얼 다운로드 버튼 스타일
+   ========================================================= */
+.pdf-download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+  color: #fff !important;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none !important;
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+  transition: all 0.2s ease;
+  margin: 15px 0;
+}
+
+.pdf-download-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(52, 152, 219, 0.4);
+  background: linear-gradient(135deg, #2980b9 0%, #1f618d 100%);
+  color: #fff !important;
+}
+
